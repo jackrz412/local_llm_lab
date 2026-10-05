@@ -5,7 +5,7 @@ appended as one JSON line to results/results.jsonl, tagged with the prompt file
 it came from and a run tag, so different prompt sets and test runs can share it.
 
 Usage:
-    python3 run_bench.py                                   # prompts.json, all models
+    python3 run_bench.py                                   # prompts_general.json, all models
     python3 run_bench.py --prompts prompts_okun.json
     python3 run_bench.py --prompts prompts_okun.json --models llama3.2:3b \\
         --only okun-trap --runs 1 --tag smoke-test
@@ -39,8 +39,8 @@ RESULTS_FILE = Path("results/results.jsonl")
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Benchmark local Ollama models.")
-    parser.add_argument("--prompts", default="prompts.json",
-                        help="prompt file to run (default: prompts.json)")
+    parser.add_argument("--prompts", default="prompts_general.json",
+                        help="prompt file to run (default: prompts_general.json)")
     parser.add_argument("--models", nargs="+", default=MODELS,
                         help="models to test (default: all three)")
     parser.add_argument("--only", nargs="+", metavar="PROMPT_ID",

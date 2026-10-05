@@ -47,7 +47,7 @@ python3 scripts/build_okun_data.py          # download FRED data -> data/okun.cs
 
 Benchmark (appends to results/results.jsonl):
 ```
-python3 run_bench.py                                 # prompts.json, all models, 3 runs each
+python3 run_bench.py                                 # prompts_general.json, all models, 3 runs each
 python3 run_bench.py --prompts prompts_okun.json     # Okun prompt set
 python3 run_bench.py --prompts prompts_okun.json --models llama3.2:3b \
     --only okun-trap --runs 1 --tag smoke-test       # quick smoke test
