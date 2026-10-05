@@ -1,0 +1,14 @@
+{
+  "full_sample": {
+    "slope": -0.4354,
+    "intercept": 1.2958,
+    "r_squared": 0.6136,
+    "n": 65
+  },
+  "excluding_2020": {
+    "slope": -0.3891,
+    "intercept": 1.1172,
+    "r_squared": 0.5797,
+    "n": 64
+  }
+}

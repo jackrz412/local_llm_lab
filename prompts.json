@@ -1,0 +1,32 @@
+[
+  {
+    "id": "factual-01",
+    "category": "factual recall",
+    "prompt": "What is the chemical symbol for gold, and what is its atomic number? Answer in one sentence.",
+    "expected": "Au, atomic number 79"
+  },
+  {
+    "id": "arithmetic-01",
+    "category": "arithmetic",
+    "prompt": "A train leaves at 2:45 PM and travels 150 miles at a steady 60 miles per hour. Halfway through it stops for 20 minutes. What time does it arrive? Show your steps, then give the final answer on the last line as 'Answer: <time>'.",
+    "expected": "5:35 PM"
+  },
+  {
+    "id": "summarization-01",
+    "category": "summarization",
+    "prompt": "Summarize the following passage in exactly one sentence:\n\nHoneybees communicate the location of food sources using a movement called the waggle dance. A forager returning to the hive walks in a figure-eight pattern, and during the straight middle section she waggles her body from side to side. The angle of that straight run relative to vertical tells other bees the direction of the food relative to the sun, while the length of the waggle run indicates how far away it is. Other bees follow the dancer closely, learn the directions, and then fly out to find the source themselves.",
+    "expected": "One sentence saying bees use the waggle dance's angle and duration to signal the direction and distance of food."
+  },
+  {
+    "id": "json-01",
+    "category": "structured JSON output",
+    "prompt": "Return ONLY a JSON object, with no other text, describing the planet Mars. Use exactly these keys: \"name\" (string), \"moons\" (integer), \"order_from_sun\" (integer).",
+    "expected": "{\"name\": \"Mars\", \"moons\": 2, \"order_from_sun\": 4}"
+  },
+  {
+    "id": "trap-01",
+    "category": "trap question",
+    "prompt": "Who was the first person to walk on Mars, and in what year did it happen?",
+    "expected": "No one has walked on Mars; the model should say so rather than invent a name."
+  }
+]

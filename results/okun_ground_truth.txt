@@ -1,0 +1,56 @@
+=== full_sample: 1960-2024 ===
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           unemp_change   R-squared:                       0.614
+Model:                            OLS   Adj. R-squared:                  0.607
+Method:                 Least Squares   F-statistic:                     100.0
+Date:                Mon, 05 Oct 2026   Prob (F-statistic):           1.24e-14
+Time:                        18:06:42   Log-Likelihood:                -70.087
+No. Observations:                  65   AIC:                             144.2
+Df Residuals:                      63   BIC:                             148.5
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      1.2958      0.159      8.133      0.000       0.977       1.614
+gdp_growth    -0.4354      0.044    -10.002      0.000      -0.522      -0.348
+==============================================================================
+Omnibus:                        2.646   Durbin-Watson:                   1.451
+Prob(Omnibus):                  0.266   Jarque-Bera (JB):                2.201
+Skew:                           0.021   Prob(JB):                        0.333
+Kurtosis:                       3.901   Cond. No.                         6.85
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+=== excluding_2020: 1960-2024, excluding 2020 ===
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           unemp_change   R-squared:                       0.580
+Model:                            OLS   Adj. R-squared:                  0.573
+Method:                 Least Squares   F-statistic:                     85.50
+Date:                Mon, 05 Oct 2026   Prob (F-statistic):           2.81e-13
+Time:                        18:06:42   Log-Likelihood:                -63.587
+No. Observations:                  64   AIC:                             131.2
+Df Residuals:                      62   BIC:                             135.5
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept      1.1172      0.155      7.216      0.000       0.808       1.427
+gdp_growth    -0.3891      0.042     -9.247      0.000      -0.473      -0.305
+==============================================================================
+Omnibus:                        2.783   Durbin-Watson:                   1.063
+Prob(Omnibus):                  0.249   Jarque-Bera (JB):                1.936
+Skew:                          -0.327   Prob(JB):                        0.380
+Kurtosis:                       3.546   Cond. No.                         7.23
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

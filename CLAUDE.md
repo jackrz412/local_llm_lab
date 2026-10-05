@@ -17,7 +17,12 @@ It is a public portfolio project (GitHub account `jackrz412`) and will be linked
   - `llama3.2:3b` (2.0 GB)
   - `llama3.1:8b` (4.9 GB)
   - `gemma3:12b` (8.1 GB)
-- Language and libraries: not decided yet.
+- Language: Python 3.9 (system `python3`).
+- Libraries: standard library only for `run_bench.py` and `scripts/build_okun_data.py`
+  (talks to Ollama's REST API at `localhost:11434` via `urllib`).
+  `pandas` and `statsmodels`, pinned in `requirements.txt` and installed in `.venv/`,
+  for `scripts/okun_regression.py` only.
+- Data: public FRED series GDPC1 and UNRATE, downloaded to `data/raw/`.
 
 ## Hard rules
 - Never include anything from my employers or their programs, sanitized or not. Use only public data sources.
@@ -26,4 +31,28 @@ It is a public portfolio project (GitHub account `jackrz412`) and will be linked
 - Never commit model files; they are too large for GitHub.
 
 ## Commands
-To be filled in once there is code to run.
+Run everything from the project root. Ollama must be running for the benchmark.
+
+Setup (once): create the virtual environment and install the packages the Okun scripts need.
+```
+python3 -m venv .venv
+.venv/bin/pip install -r requirements.txt
+```
+
+Okun ground-truth pipeline (run in order):
+```
+python3 scripts/build_okun_data.py          # download FRED data -> data/okun.csv
+.venv/bin/python scripts/okun_regression.py # fit regressions -> results/okun_ground_truth.{txt,json}
+```
+
+Benchmark (appends to results/results.jsonl):
+```
+python3 run_bench.py                                 # prompts.json, all models, 3 runs each
+python3 run_bench.py --prompts prompts_okun.json     # Okun prompt set
+python3 run_bench.py --prompts prompts_okun.json --models llama3.2:3b \
+    --only okun-trap --runs 1 --tag smoke-test       # quick smoke test
+python3 run_bench.py --help                          # all options
+```
+
+`run_bench.py` and `build_okun_data.py` use only the standard library; `okun_regression.py` needs `.venv`.
+`prompts_okun.json` embeds data from `data/okun.csv` and the full-sample summary. If the data changes, its prompts and expected answers must be updated too (there is no script for this yet).
