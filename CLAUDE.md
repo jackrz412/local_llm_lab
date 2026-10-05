@@ -1,7 +1,7 @@
 # Local LLM Lab — project instructions
 
 ## What this is
-Jack Roberts' lab for experimenting with large language models running locally through Ollama.
+Jack Roberts' benchmark lab: it compares large language models running locally through Ollama on the same tasks.
 It is a public portfolio project (GitHub account `jackrz412`) and will be linked from the portfolio site.
 
 ## How to work with me
@@ -13,6 +13,10 @@ It is a public portfolio project (GitHub account `jackrz412`) and will be linked
 
 ## Stack
 - Ollama runs the models locally (installed; models live in `~/.ollama`, outside this repo).
+- Models under test (all already pulled):
+  - `llama3.2:3b` (2.0 GB)
+  - `llama3.1:8b` (4.9 GB)
+  - `gemma3:12b` (8.1 GB)
 - Language and libraries: not decided yet.
 
 ## Hard rules
