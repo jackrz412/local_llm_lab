@@ -1,0 +1,18 @@
+# Secrets and local environment settings
+.env
+.env.*
+
+# Python virtual environments and caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Model files (often several GB; GitHub rejects files over 100 MB)
+*.gguf
+*.safetensors
+*.bin
+models/
+
+# macOS clutter
+.DS_Store
