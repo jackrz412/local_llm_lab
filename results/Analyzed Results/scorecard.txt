@@ -1,0 +1,17 @@
+prompts_general.json
+  prompt                 llama3.2:3b     llama3.1:8b      gemma3:12b
+  factual-01                     3/3             3/3             3/3
+  arithmetic-01                  1/3             0/3             3/3
+  summarization-01               3/3             3/3             3/3
+  json-01                        3/3             0/3             0/3
+  trap-01                        3/3             3/3             3/3
+
+prompts_okun.json
+  prompt                 llama3.2:3b     llama3.1:8b      gemma3:12b
+  okun-recall                    0/3             0/3             3/3
+  okun-reason                    1/3             1/3             3/3
+  okun-compute                   0/3             0/3             0/3
+  okun-code                      1/3             3/3             3/3
+  okun-interpret                 0/3             0/3             0/3
+  okun-json                      3/3             0/3             0/3
+  okun-trap                      2/3             3/3             3/3

@@ -54,5 +54,17 @@ python3 run_bench.py --prompts prompts_okun.json --models llama3.2:3b \
 python3 run_bench.py --help                          # all options
 ```
 
-`run_bench.py` and `build_okun_data.py` use only the standard library; `okun_regression.py` needs `.venv`.
+Grading (reads results/results.jsonl and results/manual_grades.csv,
+writes grades.csv and scorecard.txt to "results/Analyzed Results/", overwriting them):
+```
+python3 grade_results.py              # grade results tagged "benchmark"; okun-code marked for review
+python3 grade_results.py --run-code   # also run the model-written okun-code scripts (uses .venv)
+python3 grade_results.py --help       # all options
+```
+Hand grades go in `results/manual_grades.csv` (timestamp, model, prompt_id, run, grade, note);
+they override automatic grades. New prompt IDs need a check in `CHECKS` in `grade_results.py`,
+or they are graded "review".
+
+`run_bench.py`, `build_okun_data.py` and `grade_results.py` use only the standard library;
+`okun_regression.py` and `grade_results.py --run-code` need `.venv`.
 `prompts_okun.json` embeds data from `data/okun.csv` and the full-sample summary. If the data changes, its prompts and expected answers must be updated too (there is no script for this yet).
