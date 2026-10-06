@@ -61,8 +61,9 @@ python3 grade_results.py              # grade results tagged "benchmark"; okun-c
 python3 grade_results.py --run-code   # also run the model-written okun-code scripts (uses .venv)
 python3 grade_results.py --help       # all options
 ```
-Hand grades go in `results/manual_grades.csv` (timestamp, model, prompt_id, run, grade, note);
-they override automatic grades. New prompt IDs need a check in `CHECKS` in `grade_results.py`,
+Hand grades go in `results/manual_grades.csv` (timestamp, model, prompt_id, run, grade,
+failure_mode, note); they override automatic grades. Every fail needs a failure_mode from
+`FAILURE_MODES` in `grade_results.py`; a pass leaves it blank. New prompt IDs need a check in `CHECKS` in `grade_results.py`,
 or they are graded "review".
 
 `run_bench.py`, `build_okun_data.py` and `grade_results.py` use only the standard library;

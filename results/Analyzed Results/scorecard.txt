@@ -15,3 +15,14 @@ prompts_okun.json
   okun-interpret                 0/3             0/3             0/3
   okun-json                      3/3             0/3             0/3
   okun-trap                      2/3             3/3             3/3
+
+Failure modes (all prompt sets)
+  failure_mode           llama3.2:3b     llama3.1:8b      gemma3:12b
+  format                                           6               6
+  wrong_answer                     7               8               3
+  omission                         3               3               3
+  wrong_concept                    2               1                
+  contradiction                    1               1                
+  hallucination                    1               1                
+  broken_code                      2                                
+  total fails                     16              20              12

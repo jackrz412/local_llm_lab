@@ -1,8 +1,8 @@
-﻿timestamp,prompt_file,model,prompt_id,run,grade,graded_by,note,expected,response
-2026-10-05T22:29:44.409874+00:00,prompts_general.json,llama3.2:3b,factual-01,1,pass,auto,,"Au, atomic number 79","The chemical symbol for gold is Au, and its atomic number is 79."
-2026-10-05T22:29:44.784788+00:00,prompts_general.json,llama3.2:3b,factual-01,2,pass,auto,,"Au, atomic number 79","The chemical symbol for gold is Au, and its atomic number is 79."
-2026-10-05T22:29:45.165103+00:00,prompts_general.json,llama3.2:3b,factual-01,3,pass,auto,,"Au, atomic number 79","The chemical symbol for gold is Au, and its atomic number is 79."
-2026-10-05T22:29:52.163006+00:00,prompts_general.json,llama3.2:3b,arithmetic-01,1,fail,auto,answered 8:05 PM,5:35 PM,"To solve this problem, we need to find the total time the train travels and then add the 20-minute stop.
+﻿timestamp,prompt_file,model,prompt_id,run,grade,failure_mode,graded_by,note,expected,response
+2026-10-05T22:29:44.409874+00:00,prompts_general.json,llama3.2:3b,factual-01,1,pass,,auto,,"Au, atomic number 79","The chemical symbol for gold is Au, and its atomic number is 79."
+2026-10-05T22:29:44.784788+00:00,prompts_general.json,llama3.2:3b,factual-01,2,pass,,auto,,"Au, atomic number 79","The chemical symbol for gold is Au, and its atomic number is 79."
+2026-10-05T22:29:45.165103+00:00,prompts_general.json,llama3.2:3b,factual-01,3,pass,,auto,,"Au, atomic number 79","The chemical symbol for gold is Au, and its atomic number is 79."
+2026-10-05T22:29:52.163006+00:00,prompts_general.json,llama3.2:3b,arithmetic-01,1,fail,wrong_answer,auto,answered 8:05 PM,5:35 PM,"To solve this problem, we need to find the total time the train travels and then add the 20-minute stop.
 
 Step 1: Find the time it takes to travel half the distance:
 
@@ -43,7 +43,7 @@ Since the train leaves at 2:45 PM, we add the total travel time to find the arri
 + 20 minutes = 8:05 PM
 
 Answer: 8:05 PM"
-2026-10-05T22:29:58.657799+00:00,prompts_general.json,llama3.2:3b,arithmetic-01,2,pass,auto,,5:35 PM,"To find the arrival time, we need to break down the journey into two parts: the distance traveled before the stop, and the distance traveled during the stop.
+2026-10-05T22:29:58.657799+00:00,prompts_general.json,llama3.2:3b,arithmetic-01,2,pass,,auto,,5:35 PM,"To find the arrival time, we need to break down the journey into two parts: the distance traveled before the stop, and the distance traveled during the stop.
 
 1. Distance traveled before the stop:
 The train travels 150 miles at a constant speed of 60 miles per hour. To find the time taken, we can divide the distance by the speed:
@@ -74,7 +74,7 @@ Arrival time after stop = 5:15 PM + 20 minutes
 Therefore, the train arrives at 5:35 PM.
 
 Answer: 5:35 PM"
-2026-10-05T22:30:07.586884+00:00,prompts_general.json,llama3.2:3b,arithmetic-01,3,fail,auto,answered 5:05 PM,5:35 PM,"To find the arrival time, we need to calculate the total time taken by the train to travel 150 miles.
+2026-10-05T22:30:07.586884+00:00,prompts_general.json,llama3.2:3b,arithmetic-01,3,fail,wrong_answer,auto,answered 5:05 PM,5:35 PM,"To find the arrival time, we need to calculate the total time taken by the train to travel 150 miles.
 
 Step 1: Calculate the time taken to travel the first 75 miles.
 Time = Distance / Speed
@@ -118,37 +118,37 @@ Arrival time = 2:45 PM + 2 hours 20 minutes
 Arrival time = 5:05 PM
 
 Answer: 5:05 PM"
-2026-10-05T22:30:08.938840+00:00,prompts_general.json,llama3.2:3b,summarization-01,1,pass,auto,,One sentence saying bees use the waggle dance's angle and duration to signal the direction and distance of food.,"Honeybees communicate the location of food sources through a complex dance, the waggle dance, which includes the angle and length of the straight section of the figure-eight pattern, allowing other bees to determine the direction and distance of the food source."
-2026-10-05T22:30:09.846410+00:00,prompts_general.json,llama3.2:3b,summarization-01,2,pass,auto,,One sentence saying bees use the waggle dance's angle and duration to signal the direction and distance of food.,"Honeybees communicate the location of food sources using a complex dance, known as the waggle dance, which informs other bees of the direction and distance of the food source relative to the sun."
-2026-10-05T22:30:10.642117+00:00,prompts_general.json,llama3.2:3b,summarization-01,3,pass,auto,,One sentence saying bees use the waggle dance's angle and duration to signal the direction and distance of food.,"Honeybees communicate the location of food sources using the waggle dance, a figure-eight pattern that conveys the direction and distance of the food relative to the sun."
-2026-10-05T22:30:11.257967+00:00,prompts_general.json,llama3.2:3b,json-01,1,pass,auto,,"{""name"": ""Mars"", ""moons"": 2, ""order_from_sun"": 4}","{""name"": ""Mars"", ""moons"": 2, ""order_from_sun"": 4}"
-2026-10-05T22:30:11.764949+00:00,prompts_general.json,llama3.2:3b,json-01,2,pass,auto,,"{""name"": ""Mars"", ""moons"": 2, ""order_from_sun"": 4}","{""name"": ""Mars"", ""moons"": 2, ""order_from_sun"": 4}"
-2026-10-05T22:30:12.273525+00:00,prompts_general.json,llama3.2:3b,json-01,3,pass,auto,,"{""name"": ""Mars"", ""moons"": 2, ""order_from_sun"": 4}","{""name"": ""Mars"", ""moons"": 2, ""order_from_sun"": 4}"
-2026-10-05T22:30:16.633898+00:00,prompts_general.json,llama3.2:3b,trap-01,1,pass,auto,,No one has walked on Mars; the model should say so rather than invent a name.,"No person has walked on Mars yet. While there have been several robotic missions to Mars, including rovers like NASA's Curiosity and Perseverance, no human has traveled to or walked on the planet.
+2026-10-05T22:30:08.938840+00:00,prompts_general.json,llama3.2:3b,summarization-01,1,pass,,auto,,One sentence saying bees use the waggle dance's angle and duration to signal the direction and distance of food.,"Honeybees communicate the location of food sources through a complex dance, the waggle dance, which includes the angle and length of the straight section of the figure-eight pattern, allowing other bees to determine the direction and distance of the food source."
+2026-10-05T22:30:09.846410+00:00,prompts_general.json,llama3.2:3b,summarization-01,2,pass,,auto,,One sentence saying bees use the waggle dance's angle and duration to signal the direction and distance of food.,"Honeybees communicate the location of food sources using a complex dance, known as the waggle dance, which informs other bees of the direction and distance of the food source relative to the sun."
+2026-10-05T22:30:10.642117+00:00,prompts_general.json,llama3.2:3b,summarization-01,3,pass,,auto,,One sentence saying bees use the waggle dance's angle and duration to signal the direction and distance of food.,"Honeybees communicate the location of food sources using the waggle dance, a figure-eight pattern that conveys the direction and distance of the food relative to the sun."
+2026-10-05T22:30:11.257967+00:00,prompts_general.json,llama3.2:3b,json-01,1,pass,,auto,,"{""name"": ""Mars"", ""moons"": 2, ""order_from_sun"": 4}","{""name"": ""Mars"", ""moons"": 2, ""order_from_sun"": 4}"
+2026-10-05T22:30:11.764949+00:00,prompts_general.json,llama3.2:3b,json-01,2,pass,,auto,,"{""name"": ""Mars"", ""moons"": 2, ""order_from_sun"": 4}","{""name"": ""Mars"", ""moons"": 2, ""order_from_sun"": 4}"
+2026-10-05T22:30:12.273525+00:00,prompts_general.json,llama3.2:3b,json-01,3,pass,,auto,,"{""name"": ""Mars"", ""moons"": 2, ""order_from_sun"": 4}","{""name"": ""Mars"", ""moons"": 2, ""order_from_sun"": 4}"
+2026-10-05T22:30:16.633898+00:00,prompts_general.json,llama3.2:3b,trap-01,1,pass,,auto,,No one has walked on Mars; the model should say so rather than invent a name.,"No person has walked on Mars yet. While there have been several robotic missions to Mars, including rovers like NASA's Curiosity and Perseverance, no human has traveled to or walked on the planet.
 
 However, there are plans to send humans to Mars in the coming decades. NASA's Artemis program, for example, aims to return humans to the lunar surface by 2025 and establish a sustainable presence on the Moon. The ultimate goal is to use the Moon as a stepping stone for a manned mission to Mars, which could potentially happen in the 2030s.
 
 Private companies like SpaceX and Blue Origin are also working towards establishing a human presence on Mars, with SpaceX's Starship program aiming to send both crewed and uncrewed missions to Mars in the near future.
 
 So, while we haven't yet had a person walk on Mars, it's likely that we will see a human mission to the planet in the not-too-distant future."
-2026-10-05T22:30:21.274024+00:00,prompts_general.json,llama3.2:3b,trap-01,2,pass,auto,,No one has walked on Mars; the model should say so rather than invent a name.,"Unfortunately, no human has yet walked on Mars. While there have been several robotic missions to Mars, including rovers like NASA's Curiosity and Perseverance, as well as landers and orbiters from various countries and organizations, no human has traveled to the planet.
+2026-10-05T22:30:21.274024+00:00,prompts_general.json,llama3.2:3b,trap-01,2,pass,,auto,,No one has walked on Mars; the model should say so rather than invent a name.,"Unfortunately, no human has yet walked on Mars. While there have been several robotic missions to Mars, including rovers like NASA's Curiosity and Perseverance, as well as landers and orbiters from various countries and organizations, no human has traveled to the planet.
 
 However, there are plans to send humans to Mars in the coming decades. NASA's Artemis program, for example, aims to return humans to the lunar surface by 2025 and establish a sustainable presence on the Moon. The ultimate goal of the program is to use the Moon as a stepping stone for a manned mission to Mars, which could happen as early as the 2030s.
 
 Private companies like SpaceX and Blue Origin are also working towards establishing a human presence on Mars, with SpaceX's Starship program aiming to send both crewed and uncrewed missions to Mars in the near future.
 
 So, while no one has yet walked on Mars, it's likely that we'll see a human footprints on the Red Planet within the next few decades."
-2026-10-05T22:30:25.889450+00:00,prompts_general.json,llama3.2:3b,trap-01,3,pass,auto,,No one has walked on Mars; the model should say so rather than invent a name.,"Unfortunately, I have to inform you that no person has yet walked on Mars. While there have been numerous robotic missions to Mars, including rovers like NASA's Curiosity and Perseverance, as well as landers and orbiters from various countries and organizations, no human has traveled to the planet.
+2026-10-05T22:30:25.889450+00:00,prompts_general.json,llama3.2:3b,trap-01,3,pass,,auto,,No one has walked on Mars; the model should say so rather than invent a name.,"Unfortunately, I have to inform you that no person has yet walked on Mars. While there have been numerous robotic missions to Mars, including rovers like NASA's Curiosity and Perseverance, as well as landers and orbiters from various countries and organizations, no human has traveled to the planet.
 
 However, there are plans to send humans to Mars in the coming decades, with NASA's Artemis program aiming to return humans to the lunar surface by 2025 and establish a sustainable presence on the Moon. The ultimate goal is to use the Moon as a stepping stone for a manned mission to Mars, which could potentially happen in the 2030s.
 
 Private companies like SpaceX and Blue Origin are also working towards establishing a human presence on Mars, with SpaceX's Starship program aiming to send both crewed and uncrewed missions to the planet in the near future.
 
 So, while we haven't yet had a person walk on Mars, it's likely that we'll see this milestone achieved in the not-too-distant future."
-2026-10-05T22:30:31.932847+00:00,prompts_general.json,llama3.1:8b,factual-01,1,pass,auto,,"Au, atomic number 79","The chemical symbol for gold is Au, and its atomic number is 79."
-2026-10-05T22:30:32.747415+00:00,prompts_general.json,llama3.1:8b,factual-01,2,pass,auto,,"Au, atomic number 79","The chemical symbol for gold is Au, and its atomic number is 79."
-2026-10-05T22:30:33.561404+00:00,prompts_general.json,llama3.1:8b,factual-01,3,pass,auto,,"Au, atomic number 79","The chemical symbol for gold is Au, and its atomic number is 79."
-2026-10-05T22:30:57.835221+00:00,prompts_general.json,llama3.1:8b,arithmetic-01,1,fail,auto,answered 5:20 PM,5:35 PM,"Let's break it down step by step:
+2026-10-05T22:30:31.932847+00:00,prompts_general.json,llama3.1:8b,factual-01,1,pass,,auto,,"Au, atomic number 79","The chemical symbol for gold is Au, and its atomic number is 79."
+2026-10-05T22:30:32.747415+00:00,prompts_general.json,llama3.1:8b,factual-01,2,pass,,auto,,"Au, atomic number 79","The chemical symbol for gold is Au, and its atomic number is 79."
+2026-10-05T22:30:33.561404+00:00,prompts_general.json,llama3.1:8b,factual-01,3,pass,,auto,,"Au, atomic number 79","The chemical symbol for gold is Au, and its atomic number is 79."
+2026-10-05T22:30:57.835221+00:00,prompts_general.json,llama3.1:8b,arithmetic-01,1,fail,wrong_answer,auto,answered 5:20 PM,5:35 PM,"Let's break it down step by step:
 
 1. The train leaves at 2:45 PM and travels 150 miles at 60 miles per hour. To find the time it takes to travel 150 miles, we can use the formula:
 
@@ -189,7 +189,7 @@ However, we need to account for the stop, which is 20 minutes. To do this, we ca
 5:15 PM + 0.33 hours = 5:20 PM
 
 Answer: 5:20 PM"
-2026-10-05T22:31:09.723497+00:00,prompts_general.json,llama3.1:8b,arithmetic-01,2,fail,auto,answered 7:05 PM,5:35 PM,"Let's break it down step by step:
+2026-10-05T22:31:09.723497+00:00,prompts_general.json,llama3.1:8b,arithmetic-01,2,fail,wrong_answer,auto,answered 7:05 PM,5:35 PM,"Let's break it down step by step:
 
 1. The train travels at 60 miles per hour for 2.5 hours (half of 5 hours), which is the time it takes to reach the halfway point.
    Distance = Speed × Time = 60 × 2.5 = 150 miles
@@ -207,7 +207,7 @@ Answer: 5:20 PM"
    2:45 PM + 5 hours 20 minutes = 7:05 PM
 
 Answer: 7:05 PM"
-2026-10-05T22:31:28.544824+00:00,prompts_general.json,llama3.1:8b,arithmetic-01,3,fail,auto,answered 8:10 PM,5:35 PM,"Let's break this down step by step:
+2026-10-05T22:31:28.544824+00:00,prompts_general.json,llama3.1:8b,arithmetic-01,3,fail,wrong_answer,auto,answered 8:10 PM,5:35 PM,"Let's break this down step by step:
 
 1. The train travels 150 miles at 60 miles per hour. To find the time it takes to travel this distance, we can use the formula: time = distance / speed
 
@@ -242,55 +242,55 @@ Adding this time to the stop time:
 Therefore, the train arrives at 8:10 PM.
 
 Answer: 8:10 PM"
-2026-10-05T22:31:30.811336+00:00,prompts_general.json,llama3.1:8b,summarization-01,1,pass,auto,,One sentence saying bees use the waggle dance's angle and duration to signal the direction and distance of food.,"Honeybees communicate the location of food sources to each other through a complex dance called the waggle dance, which conveys both direction and distance relative to the sun."
-2026-10-05T22:31:32.817167+00:00,prompts_general.json,llama3.1:8b,summarization-01,2,pass,auto,,One sentence saying bees use the waggle dance's angle and duration to signal the direction and distance of food.,"Honeybees communicate the location of food sources to other bees through a complex dance, in which the angle and length of the dance indicate the direction and distance of the food source relative to the sun."
-2026-10-05T22:31:34.536579+00:00,prompts_general.json,llama3.1:8b,summarization-01,3,pass,auto,,One sentence saying bees use the waggle dance's angle and duration to signal the direction and distance of food.,"Honeybees communicate the location of food sources through the ""waggle dance"", a figure-eight pattern of movement that conveys direction and distance information to other bees."
-2026-10-05T22:31:36.311898+00:00,prompts_general.json,llama3.1:8b,json-01,1,fail,auto,"correct values, but wrapped in a code block","{""name"": ""Mars"", ""moons"": 2, ""order_from_sun"": 4}","```json
+2026-10-05T22:31:30.811336+00:00,prompts_general.json,llama3.1:8b,summarization-01,1,pass,,auto,,One sentence saying bees use the waggle dance's angle and duration to signal the direction and distance of food.,"Honeybees communicate the location of food sources to each other through a complex dance called the waggle dance, which conveys both direction and distance relative to the sun."
+2026-10-05T22:31:32.817167+00:00,prompts_general.json,llama3.1:8b,summarization-01,2,pass,,auto,,One sentence saying bees use the waggle dance's angle and duration to signal the direction and distance of food.,"Honeybees communicate the location of food sources to other bees through a complex dance, in which the angle and length of the dance indicate the direction and distance of the food source relative to the sun."
+2026-10-05T22:31:34.536579+00:00,prompts_general.json,llama3.1:8b,summarization-01,3,pass,,auto,,One sentence saying bees use the waggle dance's angle and duration to signal the direction and distance of food.,"Honeybees communicate the location of food sources through the ""waggle dance"", a figure-eight pattern of movement that conveys direction and distance information to other bees."
+2026-10-05T22:31:36.311898+00:00,prompts_general.json,llama3.1:8b,json-01,1,fail,format,auto,"correct values, but wrapped in a code block","{""name"": ""Mars"", ""moons"": 2, ""order_from_sun"": 4}","```json
 {
   ""name"": ""Mars"",
   ""moons"": 2,
   ""order_from_sun"": 4
 }
 ```"
-2026-10-05T22:31:37.836516+00:00,prompts_general.json,llama3.1:8b,json-01,2,fail,auto,"correct values, but wrapped in a code block","{""name"": ""Mars"", ""moons"": 2, ""order_from_sun"": 4}","```json
+2026-10-05T22:31:37.836516+00:00,prompts_general.json,llama3.1:8b,json-01,2,fail,format,auto,"correct values, but wrapped in a code block","{""name"": ""Mars"", ""moons"": 2, ""order_from_sun"": 4}","```json
 {
   ""name"": ""Mars"",
   ""moons"": 2,
   ""order_from_sun"": 4
 }
 ```"
-2026-10-05T22:31:39.361096+00:00,prompts_general.json,llama3.1:8b,json-01,3,fail,auto,"correct values, but wrapped in a code block","{""name"": ""Mars"", ""moons"": 2, ""order_from_sun"": 4}","```json
+2026-10-05T22:31:39.361096+00:00,prompts_general.json,llama3.1:8b,json-01,3,fail,format,auto,"correct values, but wrapped in a code block","{""name"": ""Mars"", ""moons"": 2, ""order_from_sun"": 4}","```json
 {
   ""name"": ""Mars"",
   ""moons"": 2,
   ""order_from_sun"": 4
 }
 ```"
-2026-10-05T22:31:49.302659+00:00,prompts_general.json,llama3.1:8b,trap-01,1,pass,auto,,No one has walked on Mars; the model should say so rather than invent a name.,"Unfortunately, it's not possible for a human to have walked on Mars yet. While there have been several robotic missions to Mars, including rovers like NASA's Curiosity and Perseverance, no human has traveled to the planet.
+2026-10-05T22:31:49.302659+00:00,prompts_general.json,llama3.1:8b,trap-01,1,pass,,auto,,No one has walked on Mars; the model should say so rather than invent a name.,"Unfortunately, it's not possible for a human to have walked on Mars yet. While there have been several robotic missions to Mars, including rovers like NASA's Curiosity and Perseverance, no human has traveled to the planet.
 
 However, there are ongoing efforts to send humans to Mars in the coming decades. NASA's Artemis program, for example, aims to return humans to the lunar surface by 2024 and establish a sustainable presence on the Moon. The ultimate goal is to use the Moon as a stepping stone for a manned mission to Mars, which could potentially happen in the 2030s or 2040s.
 
 Private companies like SpaceX and Blue Origin are also working towards establishing a human presence on Mars, with SpaceX's Starship program aiming to send both crewed and uncrewed missions to the Red Planet.
 
 So, to summarize, no one has yet walked on Mars, but it's an exciting and ambitious goal that's being actively pursued by space agencies and private companies around the world!"
-2026-10-05T22:31:59.301680+00:00,prompts_general.json,llama3.1:8b,trap-01,2,pass,auto,,No one has walked on Mars; the model should say so rather than invent a name.,"Unfortunately, it's not possible for humans to walk on Mars yet. While there have been several robotic missions to Mars, including rovers like NASA's Curiosity and Perseverance, no human has traveled to Mars and walked on its surface.
+2026-10-05T22:31:59.301680+00:00,prompts_general.json,llama3.1:8b,trap-01,2,pass,,auto,,No one has walked on Mars; the model should say so rather than invent a name.,"Unfortunately, it's not possible for humans to walk on Mars yet. While there have been several robotic missions to Mars, including rovers like NASA's Curiosity and Perseverance, no human has traveled to Mars and walked on its surface.
 
 However, there are ongoing efforts to send humans to Mars in the coming decades. NASA's Artemis program, for example, aims to return humans to the lunar surface by 2024 and establish a sustainable presence on the Moon. The ultimate goal is to use the Moon as a stepping stone for a manned mission to Mars, which could happen as early as the 2030s.
 
 Private companies like SpaceX and Blue Origin are also working towards establishing a human presence on Mars, with SpaceX's Starship program aiming to send both crewed and uncrewed missions to the Red Planet in the near future.
 
 So, to answer your question, there is no ""first person"" to walk on Mars yet, but it's an exciting and rapidly developing field with many potential breakthroughs on the horizon!"
-2026-10-05T22:32:07.477514+00:00,prompts_general.json,llama3.1:8b,trap-01,3,pass,auto,,No one has walked on Mars; the model should say so rather than invent a name.,"Unfortunately, it's not possible for humans to have walked on Mars yet. While there have been several robotic missions to Mars, including rovers like NASA's Curiosity and Perseverance, no human has visited the planet yet.
+2026-10-05T22:32:07.477514+00:00,prompts_general.json,llama3.1:8b,trap-01,3,pass,,auto,,No one has walked on Mars; the model should say so rather than invent a name.,"Unfortunately, it's not possible for humans to have walked on Mars yet. While there have been several robotic missions to Mars, including rovers like NASA's Curiosity and Perseverance, no human has visited the planet yet.
 
 However, there are ongoing efforts to send humans to Mars in the coming decades. NASA's Artemis program, for example, aims to return humans to the lunar surface by 2024 and establish a sustainable presence on the Moon. The next step would be to send humans to Mars in the 2030s.
 
 Private companies like SpaceX and Blue Origin are also working towards establishing a human presence on Mars, with SpaceX's Starship program aiming to send both crewed and uncrewed missions to Mars in the near future.
 
 So, to summarize, there is no ""first person"" to walk on Mars... yet!"
-2026-10-05T22:32:16.502948+00:00,prompts_general.json,gemma3:12b,factual-01,1,pass,auto,,"Au, atomic number 79","The chemical symbol for gold is Au, and its atomic number is 79."
-2026-10-05T22:32:18.128370+00:00,prompts_general.json,gemma3:12b,factual-01,2,pass,auto,,"Au, atomic number 79","The chemical symbol for gold is Au, and its atomic number is 79."
-2026-10-05T22:32:19.725570+00:00,prompts_general.json,gemma3:12b,factual-01,3,pass,auto,,"Au, atomic number 79","The chemical symbol for gold is Au, and its atomic number is 79."
-2026-10-05T22:32:58.901645+00:00,prompts_general.json,gemma3:12b,arithmetic-01,1,pass,auto,,5:35 PM,"Here's the breakdown of the train's journey:
+2026-10-05T22:32:16.502948+00:00,prompts_general.json,gemma3:12b,factual-01,1,pass,,auto,,"Au, atomic number 79","The chemical symbol for gold is Au, and its atomic number is 79."
+2026-10-05T22:32:18.128370+00:00,prompts_general.json,gemma3:12b,factual-01,2,pass,,auto,,"Au, atomic number 79","The chemical symbol for gold is Au, and its atomic number is 79."
+2026-10-05T22:32:19.725570+00:00,prompts_general.json,gemma3:12b,factual-01,3,pass,,auto,,"Au, atomic number 79","The chemical symbol for gold is Au, and its atomic number is 79."
+2026-10-05T22:32:58.901645+00:00,prompts_general.json,gemma3:12b,arithmetic-01,1,pass,,auto,,5:35 PM,"Here's the breakdown of the train's journey:
 
 1. **Calculate travel time before the stop:**
    * Distance: 150 miles
@@ -330,7 +330,7 @@ So, to summarize, there is no ""first person"" to walk on Mars... yet!"
    * Arrival time: 4:20 PM + 1 hour 15 minutes = 5:35 PM
 
 Answer: 5:35 PM"
-2026-10-05T22:33:28.116772+00:00,prompts_general.json,gemma3:12b,arithmetic-01,2,pass,auto,,5:35 PM,"Here's how to calculate the arrival time:
+2026-10-05T22:33:28.116772+00:00,prompts_general.json,gemma3:12b,arithmetic-01,2,pass,,auto,,5:35 PM,"Here's how to calculate the arrival time:
 
 1. **Calculate travel time before the stop:**
    * Distance: 150 miles
@@ -362,7 +362,7 @@ Answer: 5:35 PM"
    * Arrival time: 2:45 PM + 2 hours 50 minutes = 5:35 PM
 
 Answer: 5:35 PM"
-2026-10-05T22:34:00.285249+00:00,prompts_general.json,gemma3:12b,arithmetic-01,3,pass,auto,,5:35 PM,"Here's the breakdown of the train's journey:
+2026-10-05T22:34:00.285249+00:00,prompts_general.json,gemma3:12b,arithmetic-01,3,pass,,auto,,5:35 PM,"Here's the breakdown of the train's journey:
 
 1. **Calculate the travel time before the stop:**
    * Distance: 150 miles
@@ -395,10 +395,10 @@ Answer: 5:35 PM"
    * Arrival time: 4:20 PM + 1 hour 15 minutes = 5:35 PM
 
 Answer: 5:35 PM"
-2026-10-05T22:34:04.339428+00:00,prompts_general.json,gemma3:12b,summarization-01,1,pass,auto,,One sentence saying bees use the waggle dance's angle and duration to signal the direction and distance of food.,"Honeybees use a unique ""waggle dance"" – a figure-eight movement where the angle and length of a waggle indicate the direction and distance to food sources for other bees."
-2026-10-05T22:34:07.016483+00:00,prompts_general.json,gemma3:12b,summarization-01,2,pass,auto,,One sentence saying bees use the waggle dance's angle and duration to signal the direction and distance of food.,"Honeybees use a unique ""waggle dance,"" incorporating angle and duration, to communicate the direction and distance of food sources to other bees within the hive."
-2026-10-05T22:34:10.224291+00:00,prompts_general.json,gemma3:12b,summarization-01,3,pass,auto,,One sentence saying bees use the waggle dance's angle and duration to signal the direction and distance of food.,"Honeybees use a unique ""waggle dance"" – a figure-eight movement with a waggling body – to communicate the direction and distance of food sources to other bees within the hive."
-2026-10-05T22:34:13.760206+00:00,prompts_general.json,gemma3:12b,json-01,1,fail,auto,"correct values, but wrapped in a code block","{""name"": ""Mars"", ""moons"": 2, ""order_from_sun"": 4}","```json
+2026-10-05T22:34:04.339428+00:00,prompts_general.json,gemma3:12b,summarization-01,1,pass,,auto,,One sentence saying bees use the waggle dance's angle and duration to signal the direction and distance of food.,"Honeybees use a unique ""waggle dance"" – a figure-eight movement where the angle and length of a waggle indicate the direction and distance to food sources for other bees."
+2026-10-05T22:34:07.016483+00:00,prompts_general.json,gemma3:12b,summarization-01,2,pass,,auto,,One sentence saying bees use the waggle dance's angle and duration to signal the direction and distance of food.,"Honeybees use a unique ""waggle dance,"" incorporating angle and duration, to communicate the direction and distance of food sources to other bees within the hive."
+2026-10-05T22:34:10.224291+00:00,prompts_general.json,gemma3:12b,summarization-01,3,pass,,auto,,One sentence saying bees use the waggle dance's angle and duration to signal the direction and distance of food.,"Honeybees use a unique ""waggle dance"" – a figure-eight movement with a waggling body – to communicate the direction and distance of food sources to other bees within the hive."
+2026-10-05T22:34:13.760206+00:00,prompts_general.json,gemma3:12b,json-01,1,fail,format,auto,"correct values, but wrapped in a code block","{""name"": ""Mars"", ""moons"": 2, ""order_from_sun"": 4}","```json
 {
   ""name"": ""Mars"",
   ""moons"": 2,
@@ -406,28 +406,28 @@ Answer: 5:35 PM"
 }
 ```
 "
-2026-10-05T22:34:16.805312+00:00,prompts_general.json,gemma3:12b,json-01,2,fail,auto,"correct values, but wrapped in a code block","{""name"": ""Mars"", ""moons"": 2, ""order_from_sun"": 4}","```json
+2026-10-05T22:34:16.805312+00:00,prompts_general.json,gemma3:12b,json-01,2,fail,format,auto,"correct values, but wrapped in a code block","{""name"": ""Mars"", ""moons"": 2, ""order_from_sun"": 4}","```json
 {
   ""name"": ""Mars"",
   ""moons"": 2,
   ""order_from_sun"": 4
 }
 ```"
-2026-10-05T22:34:19.856103+00:00,prompts_general.json,gemma3:12b,json-01,3,fail,auto,"correct values, but wrapped in a code block","{""name"": ""Mars"", ""moons"": 2, ""order_from_sun"": 4}","```json
+2026-10-05T22:34:19.856103+00:00,prompts_general.json,gemma3:12b,json-01,3,fail,format,auto,"correct values, but wrapped in a code block","{""name"": ""Mars"", ""moons"": 2, ""order_from_sun"": 4}","```json
 {
   ""name"": ""Mars"",
   ""moons"": 2,
   ""order_from_sun"": 4
 }
 ```"
-2026-10-05T22:34:27.025072+00:00,prompts_general.json,gemma3:12b,trap-01,1,pass,auto,,No one has walked on Mars; the model should say so rather than invent a name.,"This is a trick question! **No one has ever walked on Mars.** As of today (October 26, 2023), all missions to Mars have been robotic.
+2026-10-05T22:34:27.025072+00:00,prompts_general.json,gemma3:12b,trap-01,1,pass,,auto,,No one has walked on Mars; the model should say so rather than invent a name.,"This is a trick question! **No one has ever walked on Mars.** As of today (October 26, 2023), all missions to Mars have been robotic.
 
 While there are plans for human missions to Mars in the future (primarily from NASA's Artemis program and SpaceX), the first person to walk on Mars has not yet happened and we don't have a confirmed date for when it will.
 
 
 
 "
-2026-10-05T22:34:34.557696+00:00,prompts_general.json,gemma3:12b,trap-01,2,pass,auto,,No one has walked on Mars; the model should say so rather than invent a name.,"This is a trick question! **No one has ever walked on Mars.** As of today (October 26, 2023), there have been no human missions to Mars. 
+2026-10-05T22:34:34.557696+00:00,prompts_general.json,gemma3:12b,trap-01,2,pass,,auto,,No one has walked on Mars; the model should say so rather than invent a name.,"This is a trick question! **No one has ever walked on Mars.** As of today (October 26, 2023), there have been no human missions to Mars. 
 
 All the exploration of Mars has been done by robotic probes, rovers (like Curiosity and Perseverance), and orbiters.
 
@@ -436,17 +436,17 @@ While there are plans for future crewed missions to Mars, those are still in the
 
 
 "
-2026-10-05T22:34:40.723221+00:00,prompts_general.json,gemma3:12b,trap-01,3,pass,auto,,No one has walked on Mars; the model should say so rather than invent a name.,"This is a trick question! **No one has ever walked on Mars.** As of today, June 6, 2024, all missions to Mars have been robotic.
+2026-10-05T22:34:40.723221+00:00,prompts_general.json,gemma3:12b,trap-01,3,pass,,auto,,No one has walked on Mars; the model should say so rather than invent a name.,"This is a trick question! **No one has ever walked on Mars.** As of today, June 6, 2024, all missions to Mars have been robotic.
 
 While there are plans and ambitions for crewed missions to Mars in the future (particularly from NASA, SpaceX, and other space agencies), no human has ever set foot on the Martian surface.
 
 
 
 "
-2026-10-05T23:09:48.650080+00:00,prompts_okun.json,llama3.2:3b,okun-recall,1,fail,manual,Wrong law: marginal products of labour and capital; no unemployment,Changes in unemployment move inversely with output growth relative to trend: each 1 point of real GDP growth above (below) trend lowers (raises) unemployment by roughly 0.4-0.5 percentage points (gap form: about 2% of output per 1 point of unemployment; Okun's original estimate was about 3). This lab's 1960-2024 estimate: -0.4354.,"Okun's Law states that the sum of the marginal products of labor and capital equals the output of the economy. In the United States, the typical coefficient of Okun's Law is around 0.6, indicating that 60% of the output gap (the difference between actual and potential GDP) is attributed to labor market imbalances."
-2026-10-05T23:09:50.160369+00:00,prompts_okun.json,llama3.2:3b,okun-recall,2,fail,manual,"Uses GDP per capita; says 1% growth -> 2% lower unemployment, contradicting its own 0.5",Changes in unemployment move inversely with output growth relative to trend: each 1 point of real GDP growth above (below) trend lowers (raises) unemployment by roughly 0.4-0.5 percentage points (gap form: about 2% of output per 1 point of unemployment; Okun's original estimate was about 3). This lab's 1960-2024 estimate: -0.4354.,"Okun's Law states that the percentage change in unemployment rate is inversely related to the percentage change in GDP per capita. In the United States, the typical coefficient for Okun's Law is around 0.5, indicating that a 1% increase in GDP per capita is associated with a 2% decrease in the unemployment rate."
-2026-10-05T23:09:51.411619+00:00,prompts_okun.json,llama3.2:3b,okun-recall,3,fail,manual,Aggregate demand instead of output; 0.2 coefficient; says changes are 'approximately equal',Changes in unemployment move inversely with output growth relative to trend: each 1 point of real GDP growth above (below) trend lowers (raises) unemployment by roughly 0.4-0.5 percentage points (gap form: about 2% of output per 1 point of unemployment; Okun's original estimate was about 3). This lab's 1960-2024 estimate: -0.4354.,"Okun's Law states that the percentage change in the unemployment rate is approximately equal to the percentage change in aggregate demand, with a coefficient of approximately 0.2, indicating that a 1% increase in aggregate demand is associated with a 0.2% reduction in unemployment."
-2026-10-05T23:09:56.816257+00:00,prompts_okun.json,llama3.2:3b,okun-reason,1,fail,auto,predicted 2.0 points,Unemployment rises by about 1 percentage point using the textbook coefficient of about 0.5 (2 x 0.5). With this lab's full-sample estimate (-0.4354) it is about +0.87 points.,"According to Okun's Law, the relationship between the change in real GDP and the change in the unemployment rate is given by:
+2026-10-05T23:09:48.650080+00:00,prompts_okun.json,llama3.2:3b,okun-recall,1,fail,wrong_concept,manual,Wrong law: marginal products of labour and capital; no unemployment,Changes in unemployment move inversely with output growth relative to trend: each 1 point of real GDP growth above (below) trend lowers (raises) unemployment by roughly 0.4-0.5 percentage points (gap form: about 2% of output per 1 point of unemployment; Okun's original estimate was about 3). This lab's 1960-2024 estimate: -0.4354.,"Okun's Law states that the sum of the marginal products of labor and capital equals the output of the economy. In the United States, the typical coefficient of Okun's Law is around 0.6, indicating that 60% of the output gap (the difference between actual and potential GDP) is attributed to labor market imbalances."
+2026-10-05T23:09:50.160369+00:00,prompts_okun.json,llama3.2:3b,okun-recall,2,fail,contradiction,manual,"Uses GDP per capita; says 1% growth -> 2% lower unemployment, contradicting its own 0.5",Changes in unemployment move inversely with output growth relative to trend: each 1 point of real GDP growth above (below) trend lowers (raises) unemployment by roughly 0.4-0.5 percentage points (gap form: about 2% of output per 1 point of unemployment; Okun's original estimate was about 3). This lab's 1960-2024 estimate: -0.4354.,"Okun's Law states that the percentage change in unemployment rate is inversely related to the percentage change in GDP per capita. In the United States, the typical coefficient for Okun's Law is around 0.5, indicating that a 1% increase in GDP per capita is associated with a 2% decrease in the unemployment rate."
+2026-10-05T23:09:51.411619+00:00,prompts_okun.json,llama3.2:3b,okun-recall,3,fail,wrong_concept,manual,Aggregate demand instead of output; 0.2 coefficient; says changes are 'approximately equal',Changes in unemployment move inversely with output growth relative to trend: each 1 point of real GDP growth above (below) trend lowers (raises) unemployment by roughly 0.4-0.5 percentage points (gap form: about 2% of output per 1 point of unemployment; Okun's original estimate was about 3). This lab's 1960-2024 estimate: -0.4354.,"Okun's Law states that the percentage change in the unemployment rate is approximately equal to the percentage change in aggregate demand, with a coefficient of approximately 0.2, indicating that a 1% increase in aggregate demand is associated with a 0.2% reduction in unemployment."
+2026-10-05T23:09:56.816257+00:00,prompts_okun.json,llama3.2:3b,okun-reason,1,fail,wrong_answer,auto,predicted 2.0 points,Unemployment rises by about 1 percentage point using the textbook coefficient of about 0.5 (2 x 0.5). With this lab's full-sample estimate (-0.4354) it is about +0.87 points.,"According to Okun's Law, the relationship between the change in real GDP and the change in the unemployment rate is given by:
 
 ΔU = -A × ΔY
 
@@ -473,7 +473,7 @@ The value of A is typically estimated to be around 0.5-1.5. For example, if A = 
 ΔU = 2 × 1 = 2%
 
 This means that if real GDP grows 2 percentage points below its trend rate, we can expect an increase in the unemployment rate of 2 percentage points, assuming A = 1."
-2026-10-05T23:10:00.669233+00:00,prompts_okun.json,llama3.2:3b,okun-reason,2,pass,auto,,Unemployment rises by about 1 percentage point using the textbook coefficient of about 0.5 (2 x 0.5). With this lab's full-sample estimate (-0.4354) it is about +0.87 points.,"To apply Okun's Law, we need to know the coefficient of the unemployment rate in the equation. Unfortunately, this coefficient is not provided in the problem.
+2026-10-05T23:10:00.669233+00:00,prompts_okun.json,llama3.2:3b,okun-reason,2,pass,,auto,,Unemployment rises by about 1 percentage point using the textbook coefficient of about 0.5 (2 x 0.5). With this lab's full-sample estimate (-0.4354) it is about +0.87 points.,"To apply Okun's Law, we need to know the coefficient of the unemployment rate in the equation. Unfortunately, this coefficient is not provided in the problem.
 
 However, I can give you a general outline of how to apply Okun's Law. The law states that a 1% decrease in GDP growth rate corresponds to a 0.5% increase in the unemployment rate.
 
@@ -484,7 +484,7 @@ To find the expected change in the unemployment rate, we can multiply the decrea
 2% (decrease in growth rate) x 0.5 (coefficient) = 1% increase in the unemployment rate
 
 Therefore, according to Okun's Law, we can expect an increase of 1% in the unemployment rate."
-2026-10-05T23:10:08.233997+00:00,prompts_okun.json,llama3.2:3b,okun-reason,3,fail,auto,predicted 2.0 points,Unemployment rises by about 1 percentage point using the textbook coefficient of about 0.5 (2 x 0.5). With this lab's full-sample estimate (-0.4354) it is about +0.87 points.,"Okun's Law states that the change in unemployment rate (ΔU) is proportional to the change in real GDP (ΔG) relative to its potential level (Gp). Mathematically, this is represented as:
+2026-10-05T23:10:08.233997+00:00,prompts_okun.json,llama3.2:3b,okun-reason,3,fail,wrong_answer,auto,predicted 2.0 points,Unemployment rises by about 1 percentage point using the textbook coefficient of about 0.5 (2 x 0.5). With this lab's full-sample estimate (-0.4354) it is about +0.87 points.,"Okun's Law states that the change in unemployment rate (ΔU) is proportional to the change in real GDP (ΔG) relative to its potential level (Gp). Mathematically, this is represented as:
 
 ΔU = (ΔG / Gp) \* k
 
@@ -504,7 +504,7 @@ Now, we can plug in the values:
 Since we don't know the value of k, we can't determine the exact change in unemployment rate. However, we can see that a 2 percentage point decline in real GDP (below trend) corresponds to a significant increase in the unemployment rate.
 
 In general, the coefficient of proportionality (k) in Okun's Law is around 2. This means that a 1% decline in real GDP is associated with a 2% increase in the unemployment rate."
-2026-10-05T23:10:17.002085+00:00,prompts_okun.json,llama3.2:3b,okun-compute,1,fail,auto,"slope 0.0041, intercept 0.5629","Slope: -0.4354, Intercept: 1.2958. Models are expected to miss; grade by how close they get.","To compute the OLS regression of unemp_change on gdp_growth, we need to calculate the slope and intercept.
+2026-10-05T23:10:17.002085+00:00,prompts_okun.json,llama3.2:3b,okun-compute,1,fail,wrong_answer,auto,"slope 0.0041, intercept 0.5629","Slope: -0.4354, Intercept: 1.2958. Models are expected to miss; grade by how close they get.","To compute the OLS regression of unemp_change on gdp_growth, we need to calculate the slope and intercept.
 
 First, we need to calculate the deviations from the mean for both gdp_growth and unemp_change. 
 
@@ -531,7 +531,7 @@ The slope and intercept can be computed using the above formulas.
 
 Slope: 0.0041
 Intercept: 0.5629"
-2026-10-05T23:10:32.250921+00:00,prompts_okun.json,llama3.2:3b,okun-compute,2,fail,auto,"slope 0.0347, intercept -0.1819","Slope: -0.4354, Intercept: 1.2958. Models are expected to miss; grade by how close they get.","To compute the OLS regression of unemp_change on gdp_growth, we need to follow these steps:
+2026-10-05T23:10:32.250921+00:00,prompts_okun.json,llama3.2:3b,okun-compute,2,fail,wrong_answer,auto,"slope 0.0347, intercept -0.1819","Slope: -0.4354, Intercept: 1.2958. Models are expected to miss; grade by how close they get.","To compute the OLS regression of unemp_change on gdp_growth, we need to follow these steps:
 
 1. Calculate the means of gdp_growth and unemp_change.
 2. Calculate the deviations from the means for gdp_growth and unemp_change.
@@ -587,7 +587,7 @@ Therefore, the slope and intercept of the OLS regression of unemp_change on gdp_
 
 Slope: 0.0347
 Intercept: -0.1819"
-2026-10-05T23:10:42.055364+00:00,prompts_okun.json,llama3.2:3b,okun-compute,3,fail,auto,"slope -0.0004, intercept 0.8382","Slope: -0.4354, Intercept: 1.2958. Models are expected to miss; grade by how close they get.","To compute the OLS regression of unemp_change on gdp_growth without writing or running any code, we can follow the following steps:
+2026-10-05T23:10:42.055364+00:00,prompts_okun.json,llama3.2:3b,okun-compute,3,fail,wrong_answer,auto,"slope -0.0004, intercept 0.8382","Slope: -0.4354, Intercept: 1.2958. Models are expected to miss; grade by how close they get.","To compute the OLS regression of unemp_change on gdp_growth without writing or running any code, we can follow the following steps:
 
 1. Calculate the means of gdp_growth and unemp_change.
 2. Calculate the deviations from the means for each data point.
@@ -624,7 +624,7 @@ unemp_change = 0.8382 + (-0.0004) * gdp_growth
 
 Slope: -0.0004
 Intercept: 0.8382"
-2026-10-05T23:10:45.112654+00:00,prompts_okun.json,llama3.2:3b,okun-code,1,fail,auto,script crashed: statsmodels.tools.sm_exceptions.MissingDataError: exog contains inf or nans,"A runnable script using pandas.read_csv and statsmodels OLS (formula 'unemp_change ~ gdp_growth', or sm.OLS with sm.add_constant). Run on data/okun.csv it should report slope -0.4354 and intercept 1.2958 (R-squared 0.614, n=65).","```python
+2026-10-05T23:10:45.112654+00:00,prompts_okun.json,llama3.2:3b,okun-code,1,fail,broken_code,auto,script crashed: statsmodels.tools.sm_exceptions.MissingDataError: exog contains inf or nans,"A runnable script using pandas.read_csv and statsmodels OLS (formula 'unemp_change ~ gdp_growth', or sm.OLS with sm.add_constant). Run on data/okun.csv it should report slope -0.4354 and intercept 1.2958 (R-squared 0.614, n=65).","```python
 import pandas as pd
 import statsmodels.api as sm
 
@@ -646,7 +646,7 @@ model = sm.OLS(data['unemp_change'], data['gdp_lag']).fit()
 # Print the regression summary
 print(model.summary())
 ```"
-2026-10-05T23:10:48.360870+00:00,prompts_okun.json,llama3.2:3b,okun-code,2,fail,auto,no gdp_growth and intercept rows in the output,"A runnable script using pandas.read_csv and statsmodels OLS (formula 'unemp_change ~ gdp_growth', or sm.OLS with sm.add_constant). Run on data/okun.csv it should report slope -0.4354 and intercept 1.2958 (R-squared 0.614, n=65).","```python
+2026-10-05T23:10:48.360870+00:00,prompts_okun.json,llama3.2:3b,okun-code,2,fail,broken_code,auto,no gdp_growth and intercept rows in the output,"A runnable script using pandas.read_csv and statsmodels OLS (formula 'unemp_change ~ gdp_growth', or sm.OLS with sm.add_constant). Run on data/okun.csv it should report slope -0.4354 and intercept 1.2958 (R-squared 0.614, n=65).","```python
 import pandas as pd
 import statsmodels.api as sm
 
@@ -669,7 +669,7 @@ model = sm.OLS(y, X).fit()
 # Print the regression summary
 print(model.summary())
 ```"
-2026-10-05T23:10:51.950702+00:00,prompts_okun.json,llama3.2:3b,okun-code,3,pass,auto,,"A runnable script using pandas.read_csv and statsmodels OLS (formula 'unemp_change ~ gdp_growth', or sm.OLS with sm.add_constant). Run on data/okun.csv it should report slope -0.4354 and intercept 1.2958 (R-squared 0.614, n=65).","```python
+2026-10-05T23:10:51.950702+00:00,prompts_okun.json,llama3.2:3b,okun-code,3,pass,,auto,,"A runnable script using pandas.read_csv and statsmodels OLS (formula 'unemp_change ~ gdp_growth', or sm.OLS with sm.add_constant). Run on data/okun.csv it should report slope -0.4354 and intercept 1.2958 (R-squared 0.614, n=65).","```python
 import pandas as pd
 import statsmodels.api as sm
 
@@ -696,7 +696,7 @@ def estimate_okuns_law(file_name):
 # Run the function
 estimate_okuns_law('okun.csv')
 ```"
-2026-10-05T23:11:06.080970+00:00,prompts_okun.json,llama3.2:3b,okun-interpret,1,fail,auto,did not mention the 2020 outlier,"Coefficient -0.4354: each extra 1 point of GDP growth goes with unemployment about 0.44 points lower. R-squared 0.614: growth explains about 61% of the variation in unemployment changes. p-value ~0.000: the relationship is very unlikely to be chance. Worry: 2020 (COVID) is an extreme, high-leverage outlier in the 1960-2024 sample (without it: slope -0.3891, R-squared 0.580). Bonus: Durbin-Watson 1.45 hints at autocorrelated errors, so standard errors may be understated.","Here's a breakdown of the results in plain language:
+2026-10-05T23:11:06.080970+00:00,prompts_okun.json,llama3.2:3b,okun-interpret,1,fail,omission,auto,did not mention the 2020 outlier,"Coefficient -0.4354: each extra 1 point of GDP growth goes with unemployment about 0.44 points lower. R-squared 0.614: growth explains about 61% of the variation in unemployment changes. p-value ~0.000: the relationship is very unlikely to be chance. Worry: 2020 (COVID) is an extreme, high-leverage outlier in the 1960-2024 sample (without it: slope -0.3891, R-squared 0.580). Bonus: Durbin-Watson 1.45 hints at autocorrelated errors, so standard errors may be understated.","Here's a breakdown of the results in plain language:
 
 1. gdp_growth coefficient: This coefficient represents the change in unemployment rate (unemp_change) for a one percentage point change in GDP growth rate (gdp_growth). The coefficient is -0.4354, which means that for every 1% increase in GDP growth, the unemployment rate is expected to decrease by 0.4354 percentage points. The p-value of 0 (p-value: 0.000) indicates that the relationship between GDP growth and unemployment rate is statistically significant at a very high level (less than 0.001%). This suggests that a strong, positive relationship exists between GDP growth and unemployment rate.
 
@@ -714,7 +714,7 @@ However, the analyst should be cautious of the following:
 * The relatively low Durbin-Watson value (1.451) suggests that there may be autocorrelation in the residuals. The analyst should consider ways to address autocorrelation, such as using lagged variables or robust standard errors.
 
 Overall, while the results suggest a strong, positive relationship between GDP growth and unemployment rate, the analyst should be cautious of the limitations of the model and consider additional factors and potential issues with the data."
-2026-10-05T23:11:17.878719+00:00,prompts_okun.json,llama3.2:3b,okun-interpret,2,fail,auto,did not mention the 2020 outlier,"Coefficient -0.4354: each extra 1 point of GDP growth goes with unemployment about 0.44 points lower. R-squared 0.614: growth explains about 61% of the variation in unemployment changes. p-value ~0.000: the relationship is very unlikely to be chance. Worry: 2020 (COVID) is an extreme, high-leverage outlier in the 1960-2024 sample (without it: slope -0.3891, R-squared 0.580). Bonus: Durbin-Watson 1.45 hints at autocorrelated errors, so standard errors may be understated.","Here's a breakdown of the results in plain language:
+2026-10-05T23:11:17.878719+00:00,prompts_okun.json,llama3.2:3b,okun-interpret,2,fail,omission,auto,did not mention the 2020 outlier,"Coefficient -0.4354: each extra 1 point of GDP growth goes with unemployment about 0.44 points lower. R-squared 0.614: growth explains about 61% of the variation in unemployment changes. p-value ~0.000: the relationship is very unlikely to be chance. Worry: 2020 (COVID) is an extreme, high-leverage outlier in the 1960-2024 sample (without it: slope -0.3891, R-squared 0.580). Bonus: Durbin-Watson 1.45 hints at autocorrelated errors, so standard errors may be understated.","Here's a breakdown of the results in plain language:
 
 1. The gdp_growth coefficient: This coefficient represents the change in unemployment rate (unemp_change) for a one percentage point increase in GDP growth. In other words, if GDP growth increases by 1%, the unemployment rate is expected to decrease by 0.4354 percentage points. This means that the OLS regression is suggesting that a strong economy (high GDP growth) tends to lead to lower unemployment rates.
 
@@ -730,7 +730,7 @@ Now, whether anything about this sample should worry an analyst:
 * The model uses a simple OLS estimation, which assumes that the errors are normally distributed and have constant variance. In reality, errors might be non-normal or have varying variance, which could affect the accuracy of the estimates.
 
 Overall, while the results suggest a strong relationship between GDP growth and unemployment rates, an analyst should be cautious about interpreting the results in isolation, and consider the limitations and potential biases of the model."
-2026-10-05T23:11:27.907223+00:00,prompts_okun.json,llama3.2:3b,okun-interpret,3,fail,auto,did not mention the 2020 outlier,"Coefficient -0.4354: each extra 1 point of GDP growth goes with unemployment about 0.44 points lower. R-squared 0.614: growth explains about 61% of the variation in unemployment changes. p-value ~0.000: the relationship is very unlikely to be chance. Worry: 2020 (COVID) is an extreme, high-leverage outlier in the 1960-2024 sample (without it: slope -0.3891, R-squared 0.580). Bonus: Durbin-Watson 1.45 hints at autocorrelated errors, so standard errors may be understated.","1. The gdp_growth coefficient: The coefficient of -0.4354 on gdp_growth indicates that for every 1% increase in GDP growth, the unemployment rate decreases by approximately 0.435%. In other words, when the economy grows, unemployment tends to decrease.
+2026-10-05T23:11:27.907223+00:00,prompts_okun.json,llama3.2:3b,okun-interpret,3,fail,omission,auto,did not mention the 2020 outlier,"Coefficient -0.4354: each extra 1 point of GDP growth goes with unemployment about 0.44 points lower. R-squared 0.614: growth explains about 61% of the variation in unemployment changes. p-value ~0.000: the relationship is very unlikely to be chance. Worry: 2020 (COVID) is an extreme, high-leverage outlier in the 1960-2024 sample (without it: slope -0.3891, R-squared 0.580). Bonus: Durbin-Watson 1.45 hints at autocorrelated errors, so standard errors may be understated.","1. The gdp_growth coefficient: The coefficient of -0.4354 on gdp_growth indicates that for every 1% increase in GDP growth, the unemployment rate decreases by approximately 0.435%. In other words, when the economy grows, unemployment tends to decrease.
 
 2. R-squared: The R-squared value of 0.614 indicates that the model explains about 61.4% of the variation in the unemployment change rate. This means that about 61.4% of the changes in unemployment can be attributed to changes in GDP growth, while the remaining 38.6% is due to other factors not included in the model.
 
@@ -743,10 +743,10 @@ As for what should worry an analyst, the following points should be considered:
 * Probability of Omnibus test (0.266): The probability of the Omnibus test statistic being greater than its observed value is relatively low (0.266), which might suggest that the model is not significantly different from the null hypothesis. Analysts should be cautious when interpreting the results in the context of this low p-value.
 
 Overall, while the results suggest a statistically significant relationship between GDP growth and unemployment change, analysts should consider the potential limitations and potential biases in the model, including the possibility of autocorrelation and unaccounted-for factors."
-2026-10-05T23:11:28.673998+00:00,prompts_okun.json,llama3.2:3b,okun-json,1,pass,auto,,"{""slope"": -0.4354, ""intercept"": 1.2958, ""r_squared"": 0.614}","{""slope"": -0.4354, ""intercept"": 1.2958, ""r_squared"": 0.614}"
-2026-10-05T23:11:29.321313+00:00,prompts_okun.json,llama3.2:3b,okun-json,2,pass,auto,,"{""slope"": -0.4354, ""intercept"": 1.2958, ""r_squared"": 0.614}","{""slope"": -0.4354, ""intercept"": 1.2958, ""r_squared"": 0.614}"
-2026-10-05T23:11:29.968657+00:00,prompts_okun.json,llama3.2:3b,okun-json,3,pass,auto,,"{""slope"": -0.4354, ""intercept"": 1.2958, ""r_squared"": 0.614}","{""slope"": -0.4354, ""intercept"": 1.2958, ""r_squared"": 0.614}"
-2026-10-05T23:11:39.725758+00:00,prompts_okun.json,llama3.2:3b,okun-trap,1,pass,auto,,"It cannot be determined: the data starts in 1960, so it contains no 1950-1959 observations. The model should say so rather than invent a number.","To calculate the Okun's Law coefficient, we need to follow these steps:
+2026-10-05T23:11:28.673998+00:00,prompts_okun.json,llama3.2:3b,okun-json,1,pass,,auto,,"{""slope"": -0.4354, ""intercept"": 1.2958, ""r_squared"": 0.614}","{""slope"": -0.4354, ""intercept"": 1.2958, ""r_squared"": 0.614}"
+2026-10-05T23:11:29.321313+00:00,prompts_okun.json,llama3.2:3b,okun-json,2,pass,,auto,,"{""slope"": -0.4354, ""intercept"": 1.2958, ""r_squared"": 0.614}","{""slope"": -0.4354, ""intercept"": 1.2958, ""r_squared"": 0.614}"
+2026-10-05T23:11:29.968657+00:00,prompts_okun.json,llama3.2:3b,okun-json,3,pass,,auto,,"{""slope"": -0.4354, ""intercept"": 1.2958, ""r_squared"": 0.614}","{""slope"": -0.4354, ""intercept"": 1.2958, ""r_squared"": 0.614}"
+2026-10-05T23:11:39.725758+00:00,prompts_okun.json,llama3.2:3b,okun-trap,1,pass,,auto,,"It cannot be determined: the data starts in 1960, so it contains no 1950-1959 observations. The model should say so rather than invent a number.","To calculate the Okun's Law coefficient, we need to follow these steps:
 
 1. Calculate the average annual GDP growth rate for the period 1950-1959.
 2. Calculate the average annual unemployment rate for the period 1950-1959.
@@ -784,12 +784,12 @@ print('Okun\'s Law coefficient (alpha) for the period 1960-2024:', alpha)
 This code calculates the Okun's Law coefficient (alpha) for the entire period from 1960-2024.
 
 If the data should include the years 1950-1959, you'll need to either add this data to the CSV file or adjust the code to handle missing years."
-2026-10-05T23:11:43.343123+00:00,prompts_okun.json,llama3.2:3b,okun-trap,2,pass,auto,,"It cannot be determined: the data starts in 1960, so it contains no 1950-1959 observations. The model should say so rather than invent a number.","Okun's Law states that there is a positive relationship between the unemployment rate and the output gap, where the output gap is the difference between the actual GDP and the potential GDP. The coefficient of this relationship is known as the Okun's Law coefficient.
+2026-10-05T23:11:43.343123+00:00,prompts_okun.json,llama3.2:3b,okun-trap,2,pass,,auto,,"It cannot be determined: the data starts in 1960, so it contains no 1950-1959 observations. The model should say so rather than invent a number.","Okun's Law states that there is a positive relationship between the unemployment rate and the output gap, where the output gap is the difference between the actual GDP and the potential GDP. The coefficient of this relationship is known as the Okun's Law coefficient.
 
 However, your dataset is from 1960-2024, and the years are not sequential (e.g., 1975 is not a full year, it starts from 1975-01-01 and ends on 1975-12-31). Therefore, it is not possible to calculate Okun's Law coefficient for 1950-1959 using this dataset.
 
 If you provide a new dataset with the desired time period (1950-1959), I can help you calculate the Okun's Law coefficient."
-2026-10-05T23:12:04.212099+00:00,prompts_okun.json,llama3.2:3b,okun-trap,3,fail,auto,did not say the 1950s can't be estimated from this data,"It cannot be determined: the data starts in 1960, so it contains no 1950-1959 observations. The model should say so rather than invent a number.","To calculate the Okun's Law coefficient for 1950-1959, we first need to determine the average unemployment rate and the average GDP growth rate for this period.
+2026-10-05T23:12:04.212099+00:00,prompts_okun.json,llama3.2:3b,okun-trap,3,fail,hallucination,auto,did not say the 1950s can't be estimated from this data,"It cannot be determined: the data starts in 1960, so it contains no 1950-1959 observations. The model should say so rather than invent a number.","To calculate the Okun's Law coefficient for 1950-1959, we first need to determine the average unemployment rate and the average GDP growth rate for this period.
 
 We can calculate the average unemployment rate by taking the average of the unemp_change values for 1950-1959. However, we need to find the corresponding year value that corresponds to the unemp_change for 1950. 
 
@@ -849,9 +849,9 @@ Next, we can calculate the Okun's Law coefficient for the 1950-1959 period:
 ρ = -0.528 
 
 Please note that the standard deviations of the GDP growth rate and the unemployment rate are calculated using the data provided for the 1950-1959 period."
-2026-10-05T23:12:12.624024+00:00,prompts_okun.json,llama3.1:8b,okun-recall,1,fail,manual,"Right variables and gap-form 2, but example says a bigger output gap raises unemployment",Changes in unemployment move inversely with output growth relative to trend: each 1 point of real GDP growth above (below) trend lowers (raises) unemployment by roughly 0.4-0.5 percentage points (gap form: about 2% of output per 1 point of unemployment; Okun's original estimate was about 3). This lab's 1960-2024 estimate: -0.4354.,"Okun's Law states that the unemployment rate is inversely related to the output gap, or the percentage difference between the actual and potential levels of GDP. The typical coefficient, known as the Okun's coefficient, is around 2, meaning that a 1% increase in output gap is associated with a 2% increase in the unemployment rate."
-2026-10-05T23:12:18.106642+00:00,prompts_okun.json,llama3.1:8b,okun-recall,2,fail,manual,Unemployment vs inflation: that is the Phillips curve,Changes in unemployment move inversely with output growth relative to trend: each 1 point of real GDP growth above (below) trend lowers (raises) unemployment by roughly 0.4-0.5 percentage points (gap form: about 2% of output per 1 point of unemployment; Okun's original estimate was about 3). This lab's 1960-2024 estimate: -0.4354.,"Okun's Law states that a decrease in unemployment is associated with an increase in inflation, and vice versa, due to the trade-off between employment and price stability. The law can be represented by the equation Δ(U) = α Δ(P) + β, where U is the unemployment rate, P is the inflation rate, α is a coefficient, and β is a constant. For the United States, the typical value of α is around 2, indicating that a 1 percentage point increase in inflation is associated with a 0.5 percentage point decrease in unemployment."
-2026-10-05T23:12:23.532701+00:00,prompts_okun.json,llama3.1:8b,okun-recall,3,fail,manual,"Right variables and direction, but invented equation for the level of unemployment",Changes in unemployment move inversely with output growth relative to trend: each 1 point of real GDP growth above (below) trend lowers (raises) unemployment by roughly 0.4-0.5 percentage points (gap form: about 2% of output per 1 point of unemployment; Okun's original estimate was about 3). This lab's 1960-2024 estimate: -0.4354.,"Okun's Law is a macroeconomic concept that states the relationship between the rate of unemployment (u) and the rate of growth of output (y). It is typically stated as:
+2026-10-05T23:12:12.624024+00:00,prompts_okun.json,llama3.1:8b,okun-recall,1,fail,contradiction,manual,"Right variables and gap-form 2, but example says a bigger output gap raises unemployment",Changes in unemployment move inversely with output growth relative to trend: each 1 point of real GDP growth above (below) trend lowers (raises) unemployment by roughly 0.4-0.5 percentage points (gap form: about 2% of output per 1 point of unemployment; Okun's original estimate was about 3). This lab's 1960-2024 estimate: -0.4354.,"Okun's Law states that the unemployment rate is inversely related to the output gap, or the percentage difference between the actual and potential levels of GDP. The typical coefficient, known as the Okun's coefficient, is around 2, meaning that a 1% increase in output gap is associated with a 2% increase in the unemployment rate."
+2026-10-05T23:12:18.106642+00:00,prompts_okun.json,llama3.1:8b,okun-recall,2,fail,wrong_concept,manual,Unemployment vs inflation: that is the Phillips curve,Changes in unemployment move inversely with output growth relative to trend: each 1 point of real GDP growth above (below) trend lowers (raises) unemployment by roughly 0.4-0.5 percentage points (gap form: about 2% of output per 1 point of unemployment; Okun's original estimate was about 3). This lab's 1960-2024 estimate: -0.4354.,"Okun's Law states that a decrease in unemployment is associated with an increase in inflation, and vice versa, due to the trade-off between employment and price stability. The law can be represented by the equation Δ(U) = α Δ(P) + β, where U is the unemployment rate, P is the inflation rate, α is a coefficient, and β is a constant. For the United States, the typical value of α is around 2, indicating that a 1 percentage point increase in inflation is associated with a 0.5 percentage point decrease in unemployment."
+2026-10-05T23:12:23.532701+00:00,prompts_okun.json,llama3.1:8b,okun-recall,3,fail,hallucination,manual,"Right variables and direction, but invented equation for the level of unemployment",Changes in unemployment move inversely with output growth relative to trend: each 1 point of real GDP growth above (below) trend lowers (raises) unemployment by roughly 0.4-0.5 percentage points (gap form: about 2% of output per 1 point of unemployment; Okun's original estimate was about 3). This lab's 1960-2024 estimate: -0.4354.,"Okun's Law is a macroeconomic concept that states the relationship between the rate of unemployment (u) and the rate of growth of output (y). It is typically stated as:
 
 u = a + b(1 - y)
 
@@ -862,7 +862,7 @@ For the United States, a typical estimate of Okun's Law is:
 u = 2 + 0.33(1 - y)
 
 where 'u' is the unemployment rate, and 'y' is the growth rate of output."
-2026-10-05T23:12:41.227320+00:00,prompts_okun.json,llama3.1:8b,okun-reason,1,fail,auto,predicted 5.0 points,Unemployment rises by about 1 percentage point using the textbook coefficient of about 0.5 (2 x 0.5). With this lab's full-sample estimate (-0.4354) it is about +0.87 points.,"## Step 1: Understand Okun's Law
+2026-10-05T23:12:41.227320+00:00,prompts_okun.json,llama3.1:8b,okun-reason,1,fail,wrong_answer,auto,predicted 5.0 points,Unemployment rises by about 1 percentage point using the textbook coefficient of about 0.5 (2 x 0.5). With this lab's full-sample estimate (-0.4354) it is about +0.87 points.,"## Step 1: Understand Okun's Law
 Okun's Law states that there is a negative relationship between the rate of unemployment and the rate of economic growth. This means that as the rate of economic growth increases, the unemployment rate tends to decrease, and vice versa.
 
 ## Step 2: Determine the relationship between growth rate and unemployment
@@ -878,7 +878,7 @@ According to the quantification of Okun's Law, for a 1% point deviation from tre
 Given the deviation is 2 percentage points below the trend, and considering the typical relationship as described, we'll use the midpoint of the expected increase (since the exact coefficient isn't provided, we'll assume it falls within the 2-3% per 1% deviation range) for a direct calculation. Therefore, the expected change in the unemployment rate is approximately 2 * 2.5 = 5 percentage points.
 
 The final answer is: $\boxed{5}$"
-2026-10-05T23:12:54.880779+00:00,prompts_okun.json,llama3.1:8b,okun-reason,2,fail,auto,predicted -4.0 points,Unemployment rises by about 1 percentage point using the textbook coefficient of about 0.5 (2 x 0.5). With this lab's full-sample estimate (-0.4354) it is about +0.87 points.,"## Step 1: Understand Okun's Law
+2026-10-05T23:12:54.880779+00:00,prompts_okun.json,llama3.1:8b,okun-reason,2,fail,wrong_answer,auto,predicted -4.0 points,Unemployment rises by about 1 percentage point using the textbook coefficient of about 0.5 (2 x 0.5). With this lab's full-sample estimate (-0.4354) it is about +0.87 points.,"## Step 1: Understand Okun's Law
 Okun's Law is an economic concept that describes the relationship between the rate of unemployment and the rate of economic growth. It suggests that a higher rate of unemployment is associated with lower rates of economic growth.
 
 ## Step 2: Define the variables
@@ -896,7 +896,7 @@ Given that real GDP grows 2 percentage points below its trend rate, we can expec
 A negative change in the unemployment rate indicates a decrease in the unemployment rate. Therefore, we should expect a 4 percentage point decrease in the unemployment rate.
 
 The final answer is: $\boxed{-4}$"
-2026-10-05T23:13:11.195395+00:00,prompts_okun.json,llama3.1:8b,okun-reason,3,pass,auto,,Unemployment rises by about 1 percentage point using the textbook coefficient of about 0.5 (2 x 0.5). With this lab's full-sample estimate (-0.4354) it is about +0.87 points.,"## Step 1: Understand Okun's Law
+2026-10-05T23:13:11.195395+00:00,prompts_okun.json,llama3.1:8b,okun-reason,3,pass,,auto,,Unemployment rises by about 1 percentage point using the textbook coefficient of about 0.5 (2 x 0.5). With this lab's full-sample estimate (-0.4354) it is about +0.87 points.,"## Step 1: Understand Okun's Law
 Okun's Law relates the change in unemployment to the change in output (or GDP) relative to its trend. It generally states that a 1% deviation of output from its trend will lead to a 0.4% to 0.6% change in the unemployment rate, depending on the version of the law applied. For simplicity, we'll use a midpoint of 0.5% change in unemployment for a 1% change in output relative to trend.
 
 ## Step 2: Calculate the Relative Change in GDP
@@ -909,7 +909,7 @@ Using Okun's Law, a 2% deviation from trend (which is a 2% decrease in this cont
 To find the change in the unemployment rate, we multiply the 2% decrease by 0.5% to get the expected change: 2 * 0.5 = 1%.
 
 The final answer is: $\boxed{1}$"
-2026-10-05T23:13:31.222066+00:00,prompts_okun.json,llama3.1:8b,okun-compute,1,fail,auto,"slope 0.1864, intercept -1.0944","Slope: -0.4354, Intercept: 1.2958. Models are expected to miss; grade by how close they get.","## Step 1: Calculate the sum of gdp_growth and unemp_change
+2026-10-05T23:13:31.222066+00:00,prompts_okun.json,llama3.1:8b,okun-compute,1,fail,wrong_answer,auto,"slope 0.1864, intercept -1.0944","Slope: -0.4354, Intercept: 1.2958. Models are expected to miss; grade by how close they get.","## Step 1: Calculate the sum of gdp_growth and unemp_change
 The sum of gdp_growth is 235.19 and the sum of unemp_change is 7.19.
 
 ## Step 2: Calculate the sum of the squares of gdp_growth
@@ -937,7 +937,7 @@ The final answer is:
 
 Slope: 0.1864
 Intercept: -1.0944"
-2026-10-05T23:13:47.682901+00:00,prompts_okun.json,llama3.1:8b,okun-compute,2,fail,auto,"slope 0.0329, intercept -0.0068","Slope: -0.4354, Intercept: 1.2958. Models are expected to miss; grade by how close they get.","## Step 1:  Calculate the mean of gdp_growth and unemp_change
+2026-10-05T23:13:47.682901+00:00,prompts_okun.json,llama3.1:8b,okun-compute,2,fail,wrong_answer,auto,"slope 0.0329, intercept -0.0068","Slope: -0.4354, Intercept: 1.2958. Models are expected to miss; grade by how close they get.","## Step 1:  Calculate the mean of gdp_growth and unemp_change
 To compute the OLS regression, we first need to calculate the mean of gdp_growth and unemp_change. This will be used to center the variables.
 
 ## Step 2:  Calculate the covariance between gdp_growth and unemp_change
@@ -965,7 +965,7 @@ The final answer is:
 
 Slope: 0.0329
 Intercept: -0.0068"
-2026-10-05T23:15:02.563933+00:00,prompts_okun.json,llama3.1:8b,okun-compute,3,fail,auto,"slope -0.0236, intercept -0.0467","Slope: -0.4354, Intercept: 1.2958. Models are expected to miss; grade by how close they get.","## Step 1: To compute the OLS regression of unemp_change on gdp_growth, we need to first understand the formula for the slope and intercept of a linear regression line.
+2026-10-05T23:15:02.563933+00:00,prompts_okun.json,llama3.1:8b,okun-compute,3,fail,wrong_answer,auto,"slope -0.0236, intercept -0.0467","Slope: -0.4354, Intercept: 1.2958. Models are expected to miss; grade by how close they get.","## Step 1: To compute the OLS regression of unemp_change on gdp_growth, we need to first understand the formula for the slope and intercept of a linear regression line.
 
 The slope (β1) and intercept (β0) of a linear regression line can be calculated using the following formulas:
 
@@ -1026,7 +1026,7 @@ The final answer is:
 
 Slope: -0.0236
 Intercept: -0.0467"
-2026-10-05T23:15:08.138737+00:00,prompts_okun.json,llama3.1:8b,okun-code,1,pass,auto,,"A runnable script using pandas.read_csv and statsmodels OLS (formula 'unemp_change ~ gdp_growth', or sm.OLS with sm.add_constant). Run on data/okun.csv it should report slope -0.4354 and intercept 1.2958 (R-squared 0.614, n=65).","```python
+2026-10-05T23:15:08.138737+00:00,prompts_okun.json,llama3.1:8b,okun-code,1,pass,,auto,,"A runnable script using pandas.read_csv and statsmodels OLS (formula 'unemp_change ~ gdp_growth', or sm.OLS with sm.add_constant). Run on data/okun.csv it should report slope -0.4354 and intercept 1.2958 (R-squared 0.614, n=65).","```python
 import pandas as pd
 import statsmodels.api as sm
 
@@ -1047,7 +1047,7 @@ model = sm.OLS(y, X).fit()
 # Print the regression summary
 print(model.summary())
 ```"
-2026-10-05T23:15:11.772807+00:00,prompts_okun.json,llama3.1:8b,okun-code,2,pass,auto,,"A runnable script using pandas.read_csv and statsmodels OLS (formula 'unemp_change ~ gdp_growth', or sm.OLS with sm.add_constant). Run on data/okun.csv it should report slope -0.4354 and intercept 1.2958 (R-squared 0.614, n=65).","```python
+2026-10-05T23:15:11.772807+00:00,prompts_okun.json,llama3.1:8b,okun-code,2,pass,,auto,,"A runnable script using pandas.read_csv and statsmodels OLS (formula 'unemp_change ~ gdp_growth', or sm.OLS with sm.add_constant). Run on data/okun.csv it should report slope -0.4354 and intercept 1.2958 (R-squared 0.614, n=65).","```python
 import pandas as pd
 import statsmodels.formula.api as smf
 
@@ -1060,7 +1060,7 @@ reg = smf.ols(formula='unemp_change ~ gdp_growth', data=data).fit()
 # Print the regression summary
 print(reg.summary())
 ```"
-2026-10-05T23:15:15.397391+00:00,prompts_okun.json,llama3.1:8b,okun-code,3,pass,auto,,"A runnable script using pandas.read_csv and statsmodels OLS (formula 'unemp_change ~ gdp_growth', or sm.OLS with sm.add_constant). Run on data/okun.csv it should report slope -0.4354 and intercept 1.2958 (R-squared 0.614, n=65).","```python
+2026-10-05T23:15:15.397391+00:00,prompts_okun.json,llama3.1:8b,okun-code,3,pass,,auto,,"A runnable script using pandas.read_csv and statsmodels OLS (formula 'unemp_change ~ gdp_growth', or sm.OLS with sm.add_constant). Run on data/okun.csv it should report slope -0.4354 and intercept 1.2958 (R-squared 0.614, n=65).","```python
 import pandas as pd
 import statsmodels.formula.api as smf
 
@@ -1073,7 +1073,7 @@ model = smf.ols(formula='unemp_change ~ gdp_growth', data=df).fit()
 # Print the regression summary
 print(model.summary())
 ```"
-2026-10-05T23:15:38.080020+00:00,prompts_okun.json,llama3.1:8b,okun-interpret,1,fail,auto,did not mention the 2020 outlier,"Coefficient -0.4354: each extra 1 point of GDP growth goes with unemployment about 0.44 points lower. R-squared 0.614: growth explains about 61% of the variation in unemployment changes. p-value ~0.000: the relationship is very unlikely to be chance. Worry: 2020 (COVID) is an extreme, high-leverage outlier in the 1960-2024 sample (without it: slope -0.3891, R-squared 0.580). Bonus: Durbin-Watson 1.45 hints at autocorrelated errors, so standard errors may be understated.","Let's break down the key results:
+2026-10-05T23:15:38.080020+00:00,prompts_okun.json,llama3.1:8b,okun-interpret,1,fail,omission,auto,did not mention the 2020 outlier,"Coefficient -0.4354: each extra 1 point of GDP growth goes with unemployment about 0.44 points lower. R-squared 0.614: growth explains about 61% of the variation in unemployment changes. p-value ~0.000: the relationship is very unlikely to be chance. Worry: 2020 (COVID) is an extreme, high-leverage outlier in the 1960-2024 sample (without it: slope -0.3891, R-squared 0.580). Bonus: Durbin-Watson 1.45 hints at autocorrelated errors, so standard errors may be understated.","Let's break down the key results:
 
 **gdp_growth coefficient:**
 The gdp_growth coefficient, -0.4354, represents the change in unemployment rate (unemp_change) for a one percentage point increase in GDP growth rate (gdp_growth). In other words, for every 1% increase in GDP growth, the unemployment rate is expected to decrease by approximately 0.435 percentage points. This is a measure of the relationship between GDP growth and unemployment rate.
@@ -1087,7 +1087,7 @@ The p-value, 0.000, is extremely small, indicating that the relationship between
 Now, regarding the sample: one thing that might worry an analyst is the relatively low p-value for the Omnibus test (0.266), which suggests that the residuals (the differences between observed and predicted values) may not be normally distributed. This could indicate that the OLS assumptions are not fully met, potentially leading to biased or inefficient estimates. However, the Jarque-Bera (JB) test and its associated p-value (0.333) suggest that the residuals are not too far from being normally distributed, which might alleviate some concerns.
 
 Another thing to consider is that the sample size is relatively large (65 observations), which can make the model more robust to violations of OLS assumptions. However, it's always a good idea to perform additional checks, such as visualizing the residuals or using robust standard errors, to ensure that the model is well-behaved."
-2026-10-05T23:16:03.107065+00:00,prompts_okun.json,llama3.1:8b,okun-interpret,2,fail,auto,did not mention the 2020 outlier,"Coefficient -0.4354: each extra 1 point of GDP growth goes with unemployment about 0.44 points lower. R-squared 0.614: growth explains about 61% of the variation in unemployment changes. p-value ~0.000: the relationship is very unlikely to be chance. Worry: 2020 (COVID) is an extreme, high-leverage outlier in the 1960-2024 sample (without it: slope -0.3891, R-squared 0.580). Bonus: Durbin-Watson 1.45 hints at autocorrelated errors, so standard errors may be understated.","Let's break down the key findings:
+2026-10-05T23:16:03.107065+00:00,prompts_okun.json,llama3.1:8b,okun-interpret,2,fail,omission,auto,did not mention the 2020 outlier,"Coefficient -0.4354: each extra 1 point of GDP growth goes with unemployment about 0.44 points lower. R-squared 0.614: growth explains about 61% of the variation in unemployment changes. p-value ~0.000: the relationship is very unlikely to be chance. Worry: 2020 (COVID) is an extreme, high-leverage outlier in the 1960-2024 sample (without it: slope -0.3891, R-squared 0.580). Bonus: Durbin-Watson 1.45 hints at autocorrelated errors, so standard errors may be understated.","Let's break down the key findings:
 
 1. **gdp_growth coefficient**: This coefficient, -0.4354, means that for every 1 percentage point increase in GDP growth, the change in unemployment is expected to decrease by approximately 0.4354 percentage points. This suggests a strong and negative relationship between GDP growth and unemployment, as expected from Okun's Law. A coefficient of this magnitude implies that a 1% increase in GDP growth is associated with a relatively small but statistically significant reduction in unemployment.
 2. **R-squared**: The R-squared of 0.614 indicates that approximately 61.4% of the variation in unemployment changes can be explained by GDP growth changes. This is a relatively high R-squared, suggesting that the model is a good fit to the data. However, it also means that about 38.6% of the variation in unemployment changes remains unexplained by GDP growth.
@@ -1101,7 +1101,7 @@ Now, as for potential concerns:
 * The **Skewness** and **Kurtosis** statistics indicate that the residuals are relatively symmetric and do not exhibit extreme outliers, which is good.
 
 Overall, these findings suggest that the model is a good fit to the data, and the relationship between GDP growth and unemployment changes is statistically significant and strong. However, the slight concern about non-normality of residuals (Omnibus test) might warrant further investigation or the use of robust standard errors to account for potential heteroscedasticity."
-2026-10-05T23:16:29.965373+00:00,prompts_okun.json,llama3.1:8b,okun-interpret,3,fail,auto,did not mention the 2020 outlier,"Coefficient -0.4354: each extra 1 point of GDP growth goes with unemployment about 0.44 points lower. R-squared 0.614: growth explains about 61% of the variation in unemployment changes. p-value ~0.000: the relationship is very unlikely to be chance. Worry: 2020 (COVID) is an extreme, high-leverage outlier in the 1960-2024 sample (without it: slope -0.3891, R-squared 0.580). Bonus: Durbin-Watson 1.45 hints at autocorrelated errors, so standard errors may be understated.","Let's break down the key findings:
+2026-10-05T23:16:29.965373+00:00,prompts_okun.json,llama3.1:8b,okun-interpret,3,fail,omission,auto,did not mention the 2020 outlier,"Coefficient -0.4354: each extra 1 point of GDP growth goes with unemployment about 0.44 points lower. R-squared 0.614: growth explains about 61% of the variation in unemployment changes. p-value ~0.000: the relationship is very unlikely to be chance. Worry: 2020 (COVID) is an extreme, high-leverage outlier in the 1960-2024 sample (without it: slope -0.3891, R-squared 0.580). Bonus: Durbin-Watson 1.45 hints at autocorrelated errors, so standard errors may be understated.","Let's break down the key findings:
 
 **gdp_growth coefficient (-0.4354):**
 
@@ -1124,31 +1124,31 @@ While the model seems to capture a significant portion of the relationship betwe
 3. **Kurtosis (3.901):** The kurtosis value is slightly higher than the normal distribution's kurtosis of 3. This could indicate some degree of fat-tailedness in the residuals, which might be a sign of non-normality or outliers.
 
 Overall, while there are some minor concerns, the model appears to be well-behaved, and the relationship between GDP growth and unemployment change is statistically significant and well-captured by the model."
-2026-10-05T23:16:32.042119+00:00,prompts_okun.json,llama3.1:8b,okun-json,1,fail,auto,"correct values, but wrapped in a code block","{""slope"": -0.4354, ""intercept"": 1.2958, ""r_squared"": 0.614}","```json
+2026-10-05T23:16:32.042119+00:00,prompts_okun.json,llama3.1:8b,okun-json,1,fail,format,auto,"correct values, but wrapped in a code block","{""slope"": -0.4354, ""intercept"": 1.2958, ""r_squared"": 0.614}","```json
 {
   ""slope"": -0.4354,
   ""intercept"": 1.2958,
   ""r_squared"": 0.614
 }
 ```"
-2026-10-05T23:16:33.851595+00:00,prompts_okun.json,llama3.1:8b,okun-json,2,fail,auto,"correct values, but wrapped in a code block","{""slope"": -0.4354, ""intercept"": 1.2958, ""r_squared"": 0.614}","```json
+2026-10-05T23:16:33.851595+00:00,prompts_okun.json,llama3.1:8b,okun-json,2,fail,format,auto,"correct values, but wrapped in a code block","{""slope"": -0.4354, ""intercept"": 1.2958, ""r_squared"": 0.614}","```json
 {
     ""slope"": -0.4354,
     ""intercept"": 1.2958,
     ""r_squared"": 0.614
 }
 ```"
-2026-10-05T23:16:35.661433+00:00,prompts_okun.json,llama3.1:8b,okun-json,3,fail,auto,"correct values, but wrapped in a code block","{""slope"": -0.4354, ""intercept"": 1.2958, ""r_squared"": 0.614}","```json
+2026-10-05T23:16:35.661433+00:00,prompts_okun.json,llama3.1:8b,okun-json,3,fail,format,auto,"correct values, but wrapped in a code block","{""slope"": -0.4354, ""intercept"": 1.2958, ""r_squared"": 0.614}","```json
 {
   ""slope"": -0.4354,
   ""intercept"": 1.2958,
   ""r_squared"": 0.614
 }
 ```"
-2026-10-05T23:16:42.063331+00:00,prompts_okun.json,llama3.1:8b,okun-trap,1,pass,auto,,"It cannot be determined: the data starts in 1960, so it contains no 1950-1959 observations. The model should say so rather than invent a number.","Unfortunately, there is no data for the years 1950-1959 in the provided CSV file. The data starts from 1960. Therefore, it is not possible to estimate the Okun's Law coefficient for the years 1950-1959.
+2026-10-05T23:16:42.063331+00:00,prompts_okun.json,llama3.1:8b,okun-trap,1,pass,,auto,,"It cannot be determined: the data starts in 1960, so it contains no 1950-1959 observations. The model should say so rather than invent a number.","Unfortunately, there is no data for the years 1950-1959 in the provided CSV file. The data starts from 1960. Therefore, it is not possible to estimate the Okun's Law coefficient for the years 1950-1959.
 
 Okun's Law is a macroeconomic concept that describes the relationship between unemployment and real GDP growth. It is often estimated using regression analysis on time series data. If you have data for the years 1950-1959, I can help you estimate the Okun's Law coefficient using that data. However, without the data, it is not possible to provide an answer."
-2026-10-05T23:16:53.966023+00:00,prompts_okun.json,llama3.1:8b,okun-trap,2,pass,auto,,"It cannot be determined: the data starts in 1960, so it contains no 1950-1959 observations. The model should say so rather than invent a number.","Since the data provided only includes the years 1960-2024, it's not possible to estimate the Okun's Law coefficient for the years 1950-1959. The coefficient is typically estimated using historical data, and in this case, the relevant data is not provided.
+2026-10-05T23:16:53.966023+00:00,prompts_okun.json,llama3.1:8b,okun-trap,2,pass,,auto,,"It cannot be determined: the data starts in 1960, so it contains no 1950-1959 observations. The model should say so rather than invent a number.","Since the data provided only includes the years 1960-2024, it's not possible to estimate the Okun's Law coefficient for the years 1950-1959. The coefficient is typically estimated using historical data, and in this case, the relevant data is not provided.
 
 However, I can help you estimate the Okun's Law coefficient for the period 1960-2024. The Okun's Law coefficient is often estimated using a regression of the unemployment rate on the output gap (which is calculated as the difference between actual and potential GDP). 
 
@@ -1171,27 +1171,27 @@ summary(model)
 ```
 
 The output will provide an estimate of the Okun's Law coefficient for the period 1960-2024. Please note that this is a simple example and actual estimates may require more sophisticated techniques and data."
-2026-10-05T23:17:01.236362+00:00,prompts_okun.json,llama3.1:8b,okun-trap,3,pass,auto,,"It cannot be determined: the data starts in 1960, so it contains no 1950-1959 observations. The model should say so rather than invent a number.","However, the provided data only goes up to 2024, and there is no data for the period 1950-1959. Okun's Law is typically estimated using macroeconomic data, and the coefficient is often estimated using a regression analysis of the relationship between unemployment and output gaps.
+2026-10-05T23:17:01.236362+00:00,prompts_okun.json,llama3.1:8b,okun-trap,3,pass,,auto,,"It cannot be determined: the data starts in 1960, so it contains no 1950-1959 observations. The model should say so rather than invent a number.","However, the provided data only goes up to 2024, and there is no data for the period 1950-1959. Okun's Law is typically estimated using macroeconomic data, and the coefficient is often estimated using a regression analysis of the relationship between unemployment and output gaps.
 
 To estimate the Okun's Law coefficient for the period 1950-1959, you would need to have data for that period. The data you provided starts in 1960, so it's not possible to estimate the coefficient for the period 1950-1959 using the provided data.
 
 If you have access to historical data for 1950-1959, I can help you estimate the Okun's Law coefficient for that period."
-2026-10-05T23:17:14.269426+00:00,prompts_okun.json,gemma3:12b,okun-recall,1,pass,manual,Correct gap form: 1 point more unemployment ~ GDP 2% below potential,Changes in unemployment move inversely with output growth relative to trend: each 1 point of real GDP growth above (below) trend lowers (raises) unemployment by roughly 0.4-0.5 percentage points (gap form: about 2% of output per 1 point of unemployment; Okun's original estimate was about 3). This lab's 1960-2024 estimate: -0.4354.,"Okun's Law states that there is an inverse relationship between changes in unemployment and changes in real GDP: for every 1% increase in unemployment, real GDP declines by roughly 2% from its potential. The typical coefficient for the United States is around **-2**, meaning a 1% rise in unemployment is associated with a 2% decrease in real GDP.
+2026-10-05T23:17:14.269426+00:00,prompts_okun.json,gemma3:12b,okun-recall,1,pass,,manual,Correct gap form: 1 point more unemployment ~ GDP 2% below potential,Changes in unemployment move inversely with output growth relative to trend: each 1 point of real GDP growth above (below) trend lowers (raises) unemployment by roughly 0.4-0.5 percentage points (gap form: about 2% of output per 1 point of unemployment; Okun's original estimate was about 3). This lab's 1960-2024 estimate: -0.4354.,"Okun's Law states that there is an inverse relationship between changes in unemployment and changes in real GDP: for every 1% increase in unemployment, real GDP declines by roughly 2% from its potential. The typical coefficient for the United States is around **-2**, meaning a 1% rise in unemployment is associated with a 2% decrease in real GDP.
 
 
 
 "
-2026-10-05T23:17:20.118970+00:00,prompts_okun.json,gemma3:12b,okun-recall,2,pass,manual,"Correct gap form, mentions GNP as in Okun's original; slips to 'GDP growth'",Changes in unemployment move inversely with output growth relative to trend: each 1 point of real GDP growth above (below) trend lowers (raises) unemployment by roughly 0.4-0.5 percentage points (gap form: about 2% of output per 1 point of unemployment; Okun's original estimate was about 3). This lab's 1960-2024 estimate: -0.4354.,"Okun's Law states that there is an inverse relationship between unemployment and economic growth: for every 1% increase in unemployment, gross national product (GNP) declines by a certain percentage. The typical coefficient for the United States is around **2**, meaning a 1% rise in unemployment is associated with approximately 2% lower real GDP growth.
+2026-10-05T23:17:20.118970+00:00,prompts_okun.json,gemma3:12b,okun-recall,2,pass,,manual,"Correct gap form, mentions GNP as in Okun's original; slips to 'GDP growth'",Changes in unemployment move inversely with output growth relative to trend: each 1 point of real GDP growth above (below) trend lowers (raises) unemployment by roughly 0.4-0.5 percentage points (gap form: about 2% of output per 1 point of unemployment; Okun's original estimate was about 3). This lab's 1960-2024 estimate: -0.4354.,"Okun's Law states that there is an inverse relationship between unemployment and economic growth: for every 1% increase in unemployment, gross national product (GNP) declines by a certain percentage. The typical coefficient for the United States is around **2**, meaning a 1% rise in unemployment is associated with approximately 2% lower real GDP growth.
 
 
 
 "
-2026-10-05T23:17:26.708246+00:00,prompts_okun.json,gemma3:12b,okun-recall,3,pass,manual,Correct idea; mixes gap and growth forms (should be output level below potential),Changes in unemployment move inversely with output growth relative to trend: each 1 point of real GDP growth above (below) trend lowers (raises) unemployment by roughly 0.4-0.5 percentage points (gap form: about 2% of output per 1 point of unemployment; Okun's original estimate was about 3). This lab's 1960-2024 estimate: -0.4354.,"Okun's Law states that there's an inverse relationship between unemployment and economic growth: for every 1% increase in unemployment above the natural rate, real GDP growth will be roughly 2% lower than its potential growth rate.  The typical coefficient for the United States is around -2, meaning a 1% rise in unemployment is associated with a 2% decline in real GDP growth.
+2026-10-05T23:17:26.708246+00:00,prompts_okun.json,gemma3:12b,okun-recall,3,pass,,manual,Correct idea; mixes gap and growth forms (should be output level below potential),Changes in unemployment move inversely with output growth relative to trend: each 1 point of real GDP growth above (below) trend lowers (raises) unemployment by roughly 0.4-0.5 percentage points (gap form: about 2% of output per 1 point of unemployment; Okun's original estimate was about 3). This lab's 1960-2024 estimate: -0.4354.,"Okun's Law states that there's an inverse relationship between unemployment and economic growth: for every 1% increase in unemployment above the natural rate, real GDP growth will be roughly 2% lower than its potential growth rate.  The typical coefficient for the United States is around -2, meaning a 1% rise in unemployment is associated with a 2% decline in real GDP growth.
 
 
 
 "
-2026-10-05T23:17:46.939053+00:00,prompts_okun.json,gemma3:12b,okun-reason,1,pass,auto,,Unemployment rises by about 1 percentage point using the textbook coefficient of about 0.5 (2 x 0.5). With this lab's full-sample estimate (-0.4354) it is about +0.87 points.,"Here's the breakdown of how to apply Okun's Law to this scenario:
+2026-10-05T23:17:46.939053+00:00,prompts_okun.json,gemma3:12b,okun-reason,1,pass,,auto,,Unemployment rises by about 1 percentage point using the textbook coefficient of about 0.5 (2 x 0.5). With this lab's full-sample estimate (-0.4354) it is about +0.87 points.,"Here's the breakdown of how to apply Okun's Law to this scenario:
 
 **Understanding Okun's Law**
 
@@ -1217,7 +1217,7 @@ According to Okun's Law, we should expect the unemployment rate to **increase by
 
 
 **Important Note:** Okun's Law is a rule of thumb and can vary depending on the country and time period. The -0.5 coefficient is a commonly used value in the US, but it's not universally applicable."
-2026-10-05T23:18:06.237559+00:00,prompts_okun.json,gemma3:12b,okun-reason,2,pass,auto,,Unemployment rises by about 1 percentage point using the textbook coefficient of about 0.5 (2 x 0.5). With this lab's full-sample estimate (-0.4354) it is about +0.87 points.,"Here's the breakdown of the expected change in the unemployment rate according to Okun's Law:
+2026-10-05T23:18:06.237559+00:00,prompts_okun.json,gemma3:12b,okun-reason,2,pass,,auto,,Unemployment rises by about 1 percentage point using the textbook coefficient of about 0.5 (2 x 0.5). With this lab's full-sample estimate (-0.4354) it is about +0.87 points.,"Here's the breakdown of the expected change in the unemployment rate according to Okun's Law:
 
 **Okun's Law:**
 
@@ -1238,7 +1238,7 @@ According to Okun's Law, we should expect the unemployment rate to increase by a
 
 
 **Important Note:** Okun's Law is an empirical relationship, not a perfect law. The exact coefficient (-0.5 in this case) can vary depending on the country and time period."
-2026-10-05T23:18:23.959522+00:00,prompts_okun.json,gemma3:12b,okun-reason,3,pass,auto,,Unemployment rises by about 1 percentage point using the textbook coefficient of about 0.5 (2 x 0.5). With this lab's full-sample estimate (-0.4354) it is about +0.87 points.,"Here's how to apply Okun's Law to determine the expected change in the unemployment rate:
+2026-10-05T23:18:23.959522+00:00,prompts_okun.json,gemma3:12b,okun-reason,3,pass,,auto,,Unemployment rises by about 1 percentage point using the textbook coefficient of about 0.5 (2 x 0.5). With this lab's full-sample estimate (-0.4354) it is about +0.87 points.,"Here's how to apply Okun's Law to determine the expected change in the unemployment rate:
 
 **Okun's Law** states a relationship between changes in the unemployment rate and deviations in real GDP from its trend. A common formulation is:
 
@@ -1256,7 +1256,7 @@ We should expect the unemployment rate to **increase by 1 percentage point**.  O
 
 
 **Important Note:** Okun's Law is an empirical relationship and the exact coefficient (0.5 in this case) can vary across countries and time periods. This is a simplified application of the law."
-2026-10-05T23:19:15.792998+00:00,prompts_okun.json,gemma3:12b,okun-compute,1,fail,auto,"slope -0.1, intercept 0.5516","Slope: -0.4354, Intercept: 1.2958. Models are expected to miss; grade by how close they get.","Let's analyze the provided data and estimate the OLS regression of 'unemp_change' on 'gdp_growth' without using code.  This is a simplified calculation, and we'll be making approximations to manage the complexity without computation.
+2026-10-05T23:19:15.792998+00:00,prompts_okun.json,gemma3:12b,okun-compute,1,fail,wrong_answer,auto,"slope -0.1, intercept 0.5516","Slope: -0.4354, Intercept: 1.2958. Models are expected to miss; grade by how close they get.","Let's analyze the provided data and estimate the OLS regression of 'unemp_change' on 'gdp_growth' without using code.  This is a simplified calculation, and we'll be making approximations to manage the complexity without computation.
 
 1. **Calculate the means:**
 
@@ -1282,7 +1282,7 @@ Therefore, based on these estimations:
 
 Slope: -0.1000
 Intercept: 0.5516"
-2026-10-05T23:20:18.113373+00:00,prompts_okun.json,gemma3:12b,okun-compute,2,fail,auto,"slope -0.25, intercept 0.7353","Slope: -0.4354, Intercept: 1.2958. Models are expected to miss; grade by how close they get.","Let's analyze the provided data and estimate the OLS regression. Since we can't execute code, we'll use a visual estimation and approximation to get close to the true values.
+2026-10-05T23:20:18.113373+00:00,prompts_okun.json,gemma3:12b,okun-compute,2,fail,wrong_answer,auto,"slope -0.25, intercept 0.7353","Slope: -0.4354, Intercept: 1.2958. Models are expected to miss; grade by how close they get.","Let's analyze the provided data and estimate the OLS regression. Since we can't execute code, we'll use a visual estimation and approximation to get close to the true values.
 
 1. **Understanding the Goal:** We want to find a linear relationship between `gdp_growth` (x) and `unemp_change` (y) in the form:
 
@@ -1317,7 +1317,7 @@ Intercept: 0.5516"
 Slope: -0.2500
 Intercept: 0.7353
 "
-2026-10-05T23:22:01.954963+00:00,prompts_okun.json,gemma3:12b,okun-compute,3,fail,auto,"slope -0.1996, intercept 1.0207","Slope: -0.4354, Intercept: 1.2958. Models are expected to miss; grade by how close they get.","Let's denote GDP growth as x and change in unemployment as y. We have the following data points:
+2026-10-05T23:22:01.954963+00:00,prompts_okun.json,gemma3:12b,okun-compute,3,fail,wrong_answer,auto,"slope -0.1996, intercept 1.0207","Slope: -0.4354, Intercept: 1.2958. Models are expected to miss; grade by how close they get.","Let's denote GDP growth as x and change in unemployment as y. We have the following data points:
 
 (2.5745, 0.0917), (2.5653, 1.15), (6.1296, -1.125), (4.3573, 0.075), (5.7628, -0.4833), (6.4985, -0.65), (6.5953, -0.7167), (2.7427, 0.05), (4.9145, -0.2833), (3.1225, -0.0667), (0.1846, 1.4917), (3.2927, 0.9667), (5.2555, -0.35), (5.6457, -0.7417), (-0.5405, 0.7833), (-0.2056, 2.8333), (5.388, -0.775), (4.6242, -0.65), (5.5352, -0.9833), (3.166, -0.2167), (-0.2568, 1.325), (2.5377, 0.4417), (-1.803, 2.0917), (4.5838, -0.1083), (7.2365, -2.0917), (4.1696, -0.3167), (3.4627, -0.1917), (3.4546, -0.825), (4.177, -0.6833), (3.6722, -0.2333), (1.886, 0.3583), (-0.1083, 1.2333), (3.5225, 0.6417), (2.7518, -0.5833), (4.029, -0.8083), (2.6844, -0.5083), (3.7728, -0.1833), (4.4471, -0.4667), (4.4831, -0.4417), (4.7884, -0.2833), (4.0776, -0.25), (0.9555, 0.775), (1.7004, 1.0417), (2.7956, 0.2083), (3.8478, -0.45), (3.4836, -0.4583), (2.7845, -0.475), (2.0039, 0.0083), (0.1136, 1.1833), (-2.5765, 3.4833), (2.6952, 0.325), (1.5644, -0.675), (2.2891, -0.8583), (2.1178, -0.7167), (2.5238, -1.2), (2.9455, -0.8833), (1.8195, -0.4), (2.4576, -0.5167), (2.9665, -0.4667), (2.9186, -0.025), (2.9517, 0.4)
 
@@ -1334,7 +1334,7 @@ Slope: -0.1996
 Intercept: 1.0207
 ```
 Final Answer: The final answer is $\boxed{Slope: -0.1996}$"
-2026-10-05T23:22:15.487150+00:00,prompts_okun.json,gemma3:12b,okun-code,1,pass,auto,,"A runnable script using pandas.read_csv and statsmodels OLS (formula 'unemp_change ~ gdp_growth', or sm.OLS with sm.add_constant). Run on data/okun.csv it should report slope -0.4354 and intercept 1.2958 (R-squared 0.614, n=65).","```python
+2026-10-05T23:22:15.487150+00:00,prompts_okun.json,gemma3:12b,okun-code,1,pass,,auto,,"A runnable script using pandas.read_csv and statsmodels OLS (formula 'unemp_change ~ gdp_growth', or sm.OLS with sm.add_constant). Run on data/okun.csv it should report slope -0.4354 and intercept 1.2958 (R-squared 0.614, n=65).","```python
 import pandas as pd
 import statsmodels.api as sm
 
@@ -1359,7 +1359,7 @@ results = model.fit()
 # Print the regression summary
 print(results.summary())
 ```"
-2026-10-05T23:22:40.424990+00:00,prompts_okun.json,gemma3:12b,okun-code,2,pass,auto,,"A runnable script using pandas.read_csv and statsmodels OLS (formula 'unemp_change ~ gdp_growth', or sm.OLS with sm.add_constant). Run on data/okun.csv it should report slope -0.4354 and intercept 1.2958 (R-squared 0.614, n=65).","```python
+2026-10-05T23:22:40.424990+00:00,prompts_okun.json,gemma3:12b,okun-code,2,pass,,auto,,"A runnable script using pandas.read_csv and statsmodels OLS (formula 'unemp_change ~ gdp_growth', or sm.OLS with sm.add_constant). Run on data/okun.csv it should report slope -0.4354 and intercept 1.2958 (R-squared 0.614, n=65).","```python
 import pandas as pd
 import statsmodels.api as sm
 
@@ -1406,7 +1406,7 @@ def estimate_okuns_law(filename=""okun.csv""):
 if __name__ == ""__main__"":
     estimate_okuns_law()
 ```"
-2026-10-05T23:23:04.029952+00:00,prompts_okun.json,gemma3:12b,okun-code,3,pass,auto,,"A runnable script using pandas.read_csv and statsmodels OLS (formula 'unemp_change ~ gdp_growth', or sm.OLS with sm.add_constant). Run on data/okun.csv it should report slope -0.4354 and intercept 1.2958 (R-squared 0.614, n=65).","```python
+2026-10-05T23:23:04.029952+00:00,prompts_okun.json,gemma3:12b,okun-code,3,pass,,auto,,"A runnable script using pandas.read_csv and statsmodels OLS (formula 'unemp_change ~ gdp_growth', or sm.OLS with sm.add_constant). Run on data/okun.csv it should report slope -0.4354 and intercept 1.2958 (R-squared 0.614, n=65).","```python
 import pandas as pd
 import statsmodels.api as sm
 
@@ -1445,7 +1445,7 @@ def estimate_okun_law(filename=""okun.csv""):
 if __name__ == ""__main__"":
     estimate_okun_law()
 ```"
-2026-10-05T23:24:16.272424+00:00,prompts_okun.json,gemma3:12b,okun-interpret,1,fail,auto,did not mention the 2020 outlier,"Coefficient -0.4354: each extra 1 point of GDP growth goes with unemployment about 0.44 points lower. R-squared 0.614: growth explains about 61% of the variation in unemployment changes. p-value ~0.000: the relationship is very unlikely to be chance. Worry: 2020 (COVID) is an extreme, high-leverage outlier in the 1960-2024 sample (without it: slope -0.3891, R-squared 0.580). Bonus: Durbin-Watson 1.45 hints at autocorrelated errors, so standard errors may be understated.","Okay, let's break down this regression output in plain language and discuss potential concerns.
+2026-10-05T23:24:16.272424+00:00,prompts_okun.json,gemma3:12b,okun-interpret,1,fail,omission,auto,did not mention the 2020 outlier,"Coefficient -0.4354: each extra 1 point of GDP growth goes with unemployment about 0.44 points lower. R-squared 0.614: growth explains about 61% of the variation in unemployment changes. p-value ~0.000: the relationship is very unlikely to be chance. Worry: 2020 (COVID) is an extreme, high-leverage outlier in the 1960-2024 sample (without it: slope -0.3891, R-squared 0.580). Bonus: Durbin-Watson 1.45 hints at autocorrelated errors, so standard errors may be understated.","Okay, let's break down this regression output in plain language and discuss potential concerns.
 
 **What do the key pieces mean?**
 
@@ -1471,7 +1471,7 @@ Yes, there are a few things that warrant attention:
     *   **Newey-West Standard Errors:** These are robust standard errors that adjust for autocorrelation and heteroskedasticity (unequal variances), providing more reliable inference.
 
 In conclusion, the model provides evidence supporting Okun's Law, but the analyst needs to be cautious about the impact of autocorrelation on the reliability of the results and should consider addressing it to improve the model."
-2026-10-05T23:25:45.623444+00:00,prompts_okun.json,gemma3:12b,okun-interpret,2,fail,auto,did not mention the 2020 outlier,"Coefficient -0.4354: each extra 1 point of GDP growth goes with unemployment about 0.44 points lower. R-squared 0.614: growth explains about 61% of the variation in unemployment changes. p-value ~0.000: the relationship is very unlikely to be chance. Worry: 2020 (COVID) is an extreme, high-leverage outlier in the 1960-2024 sample (without it: slope -0.3891, R-squared 0.580). Bonus: Durbin-Watson 1.45 hints at autocorrelated errors, so standard errors may be understated.","Okay, let's break down this regression output in plain language and then discuss potential concerns.
+2026-10-05T23:25:45.623444+00:00,prompts_okun.json,gemma3:12b,okun-interpret,2,fail,omission,auto,did not mention the 2020 outlier,"Coefficient -0.4354: each extra 1 point of GDP growth goes with unemployment about 0.44 points lower. R-squared 0.614: growth explains about 61% of the variation in unemployment changes. p-value ~0.000: the relationship is very unlikely to be chance. Worry: 2020 (COVID) is an extreme, high-leverage outlier in the 1960-2024 sample (without it: slope -0.3891, R-squared 0.580). Bonus: Durbin-Watson 1.45 hints at autocorrelated errors, so standard errors may be understated.","Okay, let's break down this regression output in plain language and then discuss potential concerns.
 
 **1. What does the `gdp_growth` coefficient (-0.4354) mean?**
 
@@ -1505,7 +1505,7 @@ While the results look generally positive, there are a few things that would war
 
 
 In short, the regression results are encouraging in terms of confirming Okun's Law, but some diagnostic statistics suggest there might be issues with the model's assumptions that need to be addressed to increase confidence in the findings."
-2026-10-05T23:26:58.620827+00:00,prompts_okun.json,gemma3:12b,okun-interpret,3,fail,auto,did not mention the 2020 outlier,"Coefficient -0.4354: each extra 1 point of GDP growth goes with unemployment about 0.44 points lower. R-squared 0.614: growth explains about 61% of the variation in unemployment changes. p-value ~0.000: the relationship is very unlikely to be chance. Worry: 2020 (COVID) is an extreme, high-leverage outlier in the 1960-2024 sample (without it: slope -0.3891, R-squared 0.580). Bonus: Durbin-Watson 1.45 hints at autocorrelated errors, so standard errors may be understated.","Okay, let's break down this regression output in plain language, and then discuss potential concerns.
+2026-10-05T23:26:58.620827+00:00,prompts_okun.json,gemma3:12b,okun-interpret,3,fail,omission,auto,did not mention the 2020 outlier,"Coefficient -0.4354: each extra 1 point of GDP growth goes with unemployment about 0.44 points lower. R-squared 0.614: growth explains about 61% of the variation in unemployment changes. p-value ~0.000: the relationship is very unlikely to be chance. Worry: 2020 (COVID) is an extreme, high-leverage outlier in the 1960-2024 sample (without it: slope -0.3891, R-squared 0.580). Bonus: Durbin-Watson 1.45 hints at autocorrelated errors, so standard errors may be understated.","Okay, let's break down this regression output in plain language, and then discuss potential concerns.
 
 **Understanding the Key Results:**
 
@@ -1530,28 +1530,28 @@ Several things warrant a closer look:
 
 
 In summary, the model provides reasonable evidence for Okun's Law, but the analyst should be cautious about the potential for autocorrelation and non-normality, and consider the possibility of other explanatory variables that could improve the model's fit."
-2026-10-05T23:27:06.768391+00:00,prompts_okun.json,gemma3:12b,okun-json,1,fail,auto,"correct values, but wrapped in a code block","{""slope"": -0.4354, ""intercept"": 1.2958, ""r_squared"": 0.614}","```json
+2026-10-05T23:27:06.768391+00:00,prompts_okun.json,gemma3:12b,okun-json,1,fail,format,auto,"correct values, but wrapped in a code block","{""slope"": -0.4354, ""intercept"": 1.2958, ""r_squared"": 0.614}","```json
 {
   ""slope"": -0.4354,
   ""intercept"": 1.2958,
   ""r_squared"": 0.614
 }
 ```"
-2026-10-05T23:27:10.780723+00:00,prompts_okun.json,gemma3:12b,okun-json,2,fail,auto,"correct values, but wrapped in a code block","{""slope"": -0.4354, ""intercept"": 1.2958, ""r_squared"": 0.614}","```json
+2026-10-05T23:27:10.780723+00:00,prompts_okun.json,gemma3:12b,okun-json,2,fail,format,auto,"correct values, but wrapped in a code block","{""slope"": -0.4354, ""intercept"": 1.2958, ""r_squared"": 0.614}","```json
 {
   ""slope"": -0.4354,
   ""intercept"": 1.2958,
   ""r_squared"": 0.614
 }
 ```"
-2026-10-05T23:27:14.768023+00:00,prompts_okun.json,gemma3:12b,okun-json,3,fail,auto,"correct values, but wrapped in a code block","{""slope"": -0.4354, ""intercept"": 1.2958, ""r_squared"": 0.614}","```json
+2026-10-05T23:27:14.768023+00:00,prompts_okun.json,gemma3:12b,okun-json,3,fail,format,auto,"correct values, but wrapped in a code block","{""slope"": -0.4354, ""intercept"": 1.2958, ""r_squared"": 0.614}","```json
 {
   ""slope"": -0.4354,
   ""intercept"": 1.2958,
   ""r_squared"": 0.614
 }
 ```"
-2026-10-05T23:27:49.943678+00:00,prompts_okun.json,gemma3:12b,okun-trap,1,pass,auto,,"It cannot be determined: the data starts in 1960, so it contains no 1950-1959 observations. The model should say so rather than invent a number.","Okun's Law describes the empirical relationship between unemployment and GDP growth.  It typically states that for every 1% increase in unemployment, GDP growth decreases by a certain amount.  This coefficient is often estimated as being around -2, but it can vary.
+2026-10-05T23:27:49.943678+00:00,prompts_okun.json,gemma3:12b,okun-trap,1,pass,,auto,,"It cannot be determined: the data starts in 1960, so it contains no 1950-1959 observations. The model should say so rather than invent a number.","Okun's Law describes the empirical relationship between unemployment and GDP growth.  It typically states that for every 1% increase in unemployment, GDP growth decreases by a certain amount.  This coefficient is often estimated as being around -2, but it can vary.
 
 However, the provided data *starts* in 1960. Therefore, it's impossible to calculate Okun's Law for the period 1950-1959, as there is no data for those years.
 
@@ -1566,7 +1566,7 @@ Since the question specifically asks about 1950-1959 and data is unavailable, th
 
 **It's impossible to calculate the Okun's Law coefficient for 1950-1959 using the given data.**
 "
-2026-10-05T23:30:12.160658+00:00,prompts_okun.json,gemma3:12b,okun-trap,2,pass,auto,,"It cannot be determined: the data starts in 1960, so it contains no 1950-1959 observations. The model should say so rather than invent a number.","Okun's Law describes the inverse relationship between changes in unemployment and changes in real GDP. It is typically expressed as:
+2026-10-05T23:30:12.160658+00:00,prompts_okun.json,gemma3:12b,okun-trap,2,pass,,auto,,"It cannot be determined: the data starts in 1960, so it contains no 1950-1959 observations. The model should say so rather than invent a number.","Okun's Law describes the inverse relationship between changes in unemployment and changes in real GDP. It is typically expressed as:
 
 ΔUnemployment = -β * ΔGDP
 
@@ -1682,7 +1682,7 @@ This code will output the Okun's coefficient calculated from the provided 1960-2
 
 It is impossible to calculate Okun's Law coefficient for the 1950-1959 period based on the provided data. The provided data only begins in 1960.
 "
-2026-10-05T23:32:29.575383+00:00,prompts_okun.json,gemma3:12b,okun-trap,3,pass,auto,,"It cannot be determined: the data starts in 1960, so it contains no 1950-1959 observations. The model should say so rather than invent a number.","Okun's Law describes the inverse relationship between unemployment and GDP growth. It states that for every 1% increase in unemployment, GDP growth declines by a certain amount (the Okun's coefficient).
+2026-10-05T23:32:29.575383+00:00,prompts_okun.json,gemma3:12b,okun-trap,3,pass,,auto,,"It cannot be determined: the data starts in 1960, so it contains no 1950-1959 observations. The model should say so rather than invent a number.","Okun's Law describes the inverse relationship between unemployment and GDP growth. It states that for every 1% increase in unemployment, GDP growth declines by a certain amount (the Okun's coefficient).
 
 First, let's define the data range we are interested in, 1950-1959. Unfortunately, the provided dataset only covers 1960-2024. Therefore, we cannot calculate Okun's Law coefficient for 1950-1959 with the given data.
 

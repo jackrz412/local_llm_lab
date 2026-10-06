@@ -1,10 +1,10 @@
-timestamp,model,prompt_id,run,grade,note
-2026-10-05T23:09:48.650080+00:00,llama3.2:3b,okun-recall,1,fail,Wrong law: marginal products of labour and capital; no unemployment
-2026-10-05T23:09:50.160369+00:00,llama3.2:3b,okun-recall,2,fail,"Uses GDP per capita; says 1% growth -> 2% lower unemployment, contradicting its own 0.5"
-2026-10-05T23:09:51.411619+00:00,llama3.2:3b,okun-recall,3,fail,Aggregate demand instead of output; 0.2 coefficient; says changes are 'approximately equal'
-2026-10-05T23:12:12.624024+00:00,llama3.1:8b,okun-recall,1,fail,"Right variables and gap-form 2, but example says a bigger output gap raises unemployment"
-2026-10-05T23:12:18.106642+00:00,llama3.1:8b,okun-recall,2,fail,Unemployment vs inflation: that is the Phillips curve
-2026-10-05T23:12:23.532701+00:00,llama3.1:8b,okun-recall,3,fail,"Right variables and direction, but invented equation for the level of unemployment"
-2026-10-05T23:17:14.269426+00:00,gemma3:12b,okun-recall,1,pass,Correct gap form: 1 point more unemployment ~ GDP 2% below potential
-2026-10-05T23:17:20.118970+00:00,gemma3:12b,okun-recall,2,pass,"Correct gap form, mentions GNP as in Okun's original; slips to 'GDP growth'"
-2026-10-05T23:17:26.708246+00:00,gemma3:12b,okun-recall,3,pass,Correct idea; mixes gap and growth forms (should be output level below potential)
+timestamp,model,prompt_id,run,grade,failure_mode,note
+2026-10-05T23:09:48.650080+00:00,llama3.2:3b,okun-recall,1,fail,wrong_concept,Wrong law: marginal products of labour and capital; no unemployment
+2026-10-05T23:09:50.160369+00:00,llama3.2:3b,okun-recall,2,fail,contradiction,"Uses GDP per capita; says 1% growth -> 2% lower unemployment, contradicting its own 0.5"
+2026-10-05T23:09:51.411619+00:00,llama3.2:3b,okun-recall,3,fail,wrong_concept,Aggregate demand instead of output; 0.2 coefficient; says changes are 'approximately equal'
+2026-10-05T23:12:12.624024+00:00,llama3.1:8b,okun-recall,1,fail,contradiction,"Right variables and gap-form 2, but example says a bigger output gap raises unemployment"
+2026-10-05T23:12:18.106642+00:00,llama3.1:8b,okun-recall,2,fail,wrong_concept,Unemployment vs inflation: that is the Phillips curve
+2026-10-05T23:12:23.532701+00:00,llama3.1:8b,okun-recall,3,fail,hallucination,"Right variables and direction, but invented equation for the level of unemployment"
+2026-10-05T23:17:14.269426+00:00,gemma3:12b,okun-recall,1,pass,,Correct gap form: 1 point more unemployment ~ GDP 2% below potential
+2026-10-05T23:17:20.118970+00:00,gemma3:12b,okun-recall,2,pass,,"Correct gap form, mentions GNP as in Okun's original; slips to 'GDP growth'"
+2026-10-05T23:17:26.708246+00:00,gemma3:12b,okun-recall,3,pass,,Correct idea; mixes gap and growth forms (should be output level below potential)
