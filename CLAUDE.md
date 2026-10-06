@@ -4,6 +4,26 @@
 Jack Roberts' benchmark lab: it compares large language models running locally through Ollama on the same tasks.
 It is a public portfolio project (GitHub account `jackrz412`) and will be linked from the portfolio site.
 
+Two prompt sets, each run 3 times per model:
+- `prompts_general.json` (set 1): factual recall, arithmetic, summarization, JSON output, trap question.
+- `prompts_okun.json` (set 2): Okun's Law, graded against a regression on public FRED data (1960–2024).
+
+Answers are graded automatically (plus hand grades where code can't judge), every fail gets a
+failure mode, and the write-up is in `results/Analyzed Results/FINDINGS.md`.
+
+## Project layout
+```
+run_bench.py                 send prompts to the models -> results/results.jsonl
+grade_results.py             grade answers -> results/Analyzed Results/
+prompts_general.json         prompt set 1
+prompts_okun.json            prompt set 2 (embeds data/okun.csv and the regression summary)
+scripts/build_okun_data.py   download FRED data -> data/raw/, data/okun.csv
+scripts/okun_regression.py   fit Okun's Law -> results/okun_ground_truth.{txt,json}
+results/results.jsonl        raw answers, append-only
+results/manual_grades.csv    hand grades (written by hand, read by the grader)
+results/Analyzed Results/    grades.csv, scorecard.txt (generated), FINDINGS.md (written by hand)
+```
+
 ## How to work with me
 - I'm learning. Before running a command or adding a dependency, say in one or two sentences what it does and why we need it.
 - Define technical terms the first time they come up.
@@ -17,11 +37,12 @@ It is a public portfolio project (GitHub account `jackrz412`) and will be linked
   - `llama3.2:3b` (2.0 GB)
   - `llama3.1:8b` (4.9 GB)
   - `gemma3:12b` (8.1 GB)
+- Hardware: Apple M4, 16 GB RAM (about 120 GB/s memory bandwidth). Speed results depend on it.
 - Language: Python 3.9 (system `python3`).
-- Libraries: standard library only for `run_bench.py` and `scripts/build_okun_data.py`
-  (talks to Ollama's REST API at `localhost:11434` via `urllib`).
+- Libraries: standard library only for `run_bench.py`, `grade_results.py` and
+  `scripts/build_okun_data.py` (they talk to Ollama's REST API at `localhost:11434` via `urllib`).
   `pandas` and `statsmodels`, pinned in `requirements.txt` and installed in `.venv/`,
-  for `scripts/okun_regression.py` only.
+  for `scripts/okun_regression.py` and `grade_results.py --run-code` only.
 - Data: public FRED series GDPC1 and UNRATE, downloaded to `data/raw/`.
 
 ## Hard rules
@@ -29,6 +50,20 @@ It is a public portfolio project (GitHub account `jackrz412`) and will be linked
 - Never put personal contact details (phone, home address, personal email) in the code or in commits.
 - Never commit secrets: API keys, tokens, `.env` files.
 - Never commit model files; they are too large for GitHub.
+
+## Conventions
+- `results/results.jsonl` is append-only: never edit or delete its lines. Tag test runs
+  (e.g. `--tag smoke-test`) so the grader, which only grades `benchmark` by default, skips them.
+- Never type grades into `results/Analyzed Results/grades.csv`; it is overwritten on every run.
+  Hand grades go in `results/manual_grades.csv`.
+- Failure modes come only from the fixed list in `FAILURE_MODES` (`grade_results.py`), one per fail:
+  its main cause.
+- Use snake_case for variables, columns and fields, matching the existing code.
+- Code must run on Python 3.9: no `X | None` type hints, no `match` statements.
+- FRED downloads must use urllib's default User-Agent; FRED drops requests with a custom one.
+- Don't commit spreadsheet copies of results (e.g. `.numbers`); `grades.csv` is the source.
+- `FINDINGS.md` is written by hand and does not update itself. After new runs or grade changes,
+  recompute its numbers from `grades.csv` and `results.jsonl`.
 
 ## Commands
 Run everything from the project root. Ollama must be running for the benchmark.
