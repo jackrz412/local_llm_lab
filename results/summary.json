@@ -1,0 +1,406 @@
+{
+  "hardware": {
+    "machine": "Apple M4 Mac mini, 16 GB RAM",
+    "memory_bandwidth_gb_s": 120
+  },
+  "runs_per_prompt": 3,
+  "comparable_excludes": [
+    "okun-compute",
+    "okun-interpret"
+  ],
+  "models": [
+    {
+      "name": "llama3.2:3b",
+      "size_gb": 2.0,
+      "tokens_per_second": 46.1,
+      "total_seconds": 181.9,
+      "seconds_per_correct": 9.1,
+      "pass_rates": {
+        "all": {
+          "strict": {
+            "passed": 20,
+            "total": 36
+          },
+          "json_accepted": {
+            "passed": 20,
+            "total": 36
+          }
+        },
+        "comparable": {
+          "strict": {
+            "passed": 20,
+            "total": 30
+          },
+          "json_accepted": {
+            "passed": 20,
+            "total": 30
+          }
+        }
+      },
+      "failure_modes": {
+        "wrong_answer": 7,
+        "omission": 3,
+        "wrong_concept": 2,
+        "broken_code": 2,
+        "contradiction": 1,
+        "hallucination": 1
+      }
+    },
+    {
+      "name": "llama3.1:8b",
+      "size_gb": 4.9,
+      "tokens_per_second": 21.3,
+      "total_seconds": 398.5,
+      "seconds_per_correct": 24.9,
+      "pass_rates": {
+        "all": {
+          "strict": {
+            "passed": 16,
+            "total": 36
+          },
+          "json_accepted": {
+            "passed": 22,
+            "total": 36
+          }
+        },
+        "comparable": {
+          "strict": {
+            "passed": 16,
+            "total": 30
+          },
+          "json_accepted": {
+            "passed": 22,
+            "total": 30
+          }
+        }
+      },
+      "failure_modes": {
+        "wrong_answer": 8,
+        "format": 6,
+        "omission": 3,
+        "contradiction": 1,
+        "wrong_concept": 1,
+        "hallucination": 1
+      }
+    },
+    {
+      "name": "gemma3:12b",
+      "size_gb": 8.1,
+      "tokens_per_second": 13.0,
+      "total_seconds": 1081.2,
+      "seconds_per_correct": 45.0,
+      "pass_rates": {
+        "all": {
+          "strict": {
+            "passed": 24,
+            "total": 36
+          },
+          "json_accepted": {
+            "passed": 30,
+            "total": 36
+          }
+        },
+        "comparable": {
+          "strict": {
+            "passed": 24,
+            "total": 30
+          },
+          "json_accepted": {
+            "passed": 30,
+            "total": 30
+          }
+        }
+      },
+      "failure_modes": {
+        "format": 6,
+        "wrong_answer": 3,
+        "omission": 3
+      }
+    }
+  ],
+  "scorecard": {
+    "prompts": [
+      {
+        "id": "factual-01",
+        "set": "general"
+      },
+      {
+        "id": "arithmetic-01",
+        "set": "general"
+      },
+      {
+        "id": "summarization-01",
+        "set": "general"
+      },
+      {
+        "id": "json-01",
+        "set": "general"
+      },
+      {
+        "id": "trap-01",
+        "set": "general"
+      },
+      {
+        "id": "okun-recall",
+        "set": "okun"
+      },
+      {
+        "id": "okun-reason",
+        "set": "okun"
+      },
+      {
+        "id": "okun-compute",
+        "set": "okun"
+      },
+      {
+        "id": "okun-code",
+        "set": "okun"
+      },
+      {
+        "id": "okun-interpret",
+        "set": "okun"
+      },
+      {
+        "id": "okun-json",
+        "set": "okun"
+      },
+      {
+        "id": "okun-trap",
+        "set": "okun"
+      }
+    ],
+    "strict": {
+      "llama3.2:3b": [
+        3,
+        1,
+        3,
+        3,
+        3,
+        0,
+        1,
+        0,
+        1,
+        0,
+        3,
+        2
+      ],
+      "llama3.1:8b": [
+        3,
+        0,
+        3,
+        0,
+        3,
+        0,
+        1,
+        0,
+        3,
+        0,
+        0,
+        3
+      ],
+      "gemma3:12b": [
+        3,
+        3,
+        3,
+        0,
+        3,
+        3,
+        3,
+        0,
+        3,
+        0,
+        0,
+        3
+      ]
+    },
+    "json_accepted": {
+      "llama3.2:3b": [
+        3,
+        1,
+        3,
+        3,
+        3,
+        0,
+        1,
+        0,
+        1,
+        0,
+        3,
+        2
+      ],
+      "llama3.1:8b": [
+        3,
+        0,
+        3,
+        3,
+        3,
+        0,
+        1,
+        0,
+        3,
+        0,
+        3,
+        3
+      ],
+      "gemma3:12b": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        0,
+        3,
+        0,
+        3,
+        3
+      ]
+    }
+  },
+  "okun_ground_truth": {
+    "slope": -0.4354,
+    "intercept": 1.2958,
+    "r_squared": 0.6136,
+    "n": 65
+  },
+  "okun_compute_guesses": [
+    {
+      "model": "llama3.2:3b",
+      "run": 1,
+      "slope": 0.0041,
+      "intercept": 0.5629
+    },
+    {
+      "model": "llama3.2:3b",
+      "run": 2,
+      "slope": 0.0347,
+      "intercept": -0.1819
+    },
+    {
+      "model": "llama3.2:3b",
+      "run": 3,
+      "slope": -0.0004,
+      "intercept": 0.8382
+    },
+    {
+      "model": "llama3.1:8b",
+      "run": 1,
+      "slope": 0.1864,
+      "intercept": -1.0944
+    },
+    {
+      "model": "llama3.1:8b",
+      "run": 2,
+      "slope": 0.0329,
+      "intercept": -0.0068
+    },
+    {
+      "model": "llama3.1:8b",
+      "run": 3,
+      "slope": -0.0236,
+      "intercept": -0.0467
+    },
+    {
+      "model": "gemma3:12b",
+      "run": 1,
+      "slope": -0.1,
+      "intercept": 0.5516
+    },
+    {
+      "model": "gemma3:12b",
+      "run": 2,
+      "slope": -0.25,
+      "intercept": 0.7353
+    },
+    {
+      "model": "gemma3:12b",
+      "run": 3,
+      "slope": -0.1996,
+      "intercept": 1.0207
+    }
+  ],
+  "quotes": [
+    {
+      "id": "format-json",
+      "model": "gemma3:12b",
+      "prompt_id": "json-01",
+      "caption": "Graded a fail: the JSON is correct, but wrapped in a Markdown code block.",
+      "excerpts": [
+        {
+          "runs": [
+            1
+          ],
+          "grade": "fail",
+          "failure_mode": "format",
+          "text": "```json\n{\n  \"name\": \"Mars\",\n  \"moons\": 2,\n  \"order_from_sun\": 4\n}\n```"
+        }
+      ]
+    },
+    {
+      "id": "phillips-curve",
+      "model": "llama3.1:8b",
+      "prompt_id": "okun-recall",
+      "caption": "Describes the Phillips curve (unemployment vs inflation), not Okun's Law.",
+      "excerpts": [
+        {
+          "runs": [
+            2
+          ],
+          "grade": "fail",
+          "failure_mode": "wrong_concept",
+          "text": "Okun's Law states that a decrease in unemployment is associated with an increase in inflation, and vice versa, due to the trade-off between employment and price stability."
+        }
+      ]
+    },
+    {
+      "id": "invented-1950s",
+      "model": "llama3.2:3b",
+      "prompt_id": "okun-trap",
+      "caption": "The data starts in 1960. Instead of saying so, it invents values for the 1950s.",
+      "excerpts": [
+        {
+          "runs": [
+            3
+          ],
+          "grade": "fail",
+          "failure_mode": "hallucination",
+          "text": "Looking at the data, we see that the unemp_change for 1950 is not available. However, we can calculate it as follows: "
+        },
+        {
+          "runs": [
+            3
+          ],
+          "grade": "fail",
+          "failure_mode": "hallucination",
+          "text": "unemp_change_1949 = 0.7833\nunemp_change_1951 = 2.8333"
+        }
+      ]
+    },
+    {
+      "id": "made-up-date",
+      "model": "gemma3:12b",
+      "prompt_id": "trap-01",
+      "caption": "A passing answer that still states a made-up date as fact, and a different one on run 3.",
+      "excerpts": [
+        {
+          "runs": [
+            1,
+            2
+          ],
+          "grade": "pass",
+          "failure_mode": null,
+          "text": "**No one has ever walked on Mars.** As of today (October 26, 2023),"
+        },
+        {
+          "runs": [
+            3
+          ],
+          "grade": "pass",
+          "failure_mode": null,
+          "text": "As of today, June 6, 2024, all missions to Mars have been robotic."
+        }
+      ]
+    }
+  ]
+}
